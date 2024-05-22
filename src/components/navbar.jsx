@@ -80,7 +80,7 @@ const Navbar = ({ modal }) => {
             className="text-white text-4xl md:hidden cursor-pointer"
           />
         </div>
-        {modal.modal && <Modal modal={modal} />}
+        {modal.modal && <Modal modalAct={modal} />}
       </div>
     </div>
   );

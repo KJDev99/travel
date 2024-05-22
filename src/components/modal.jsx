@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-
+import { IoClose } from "react-icons/io5";
 import { InputMask } from "primereact/inputmask";
 
-const Modal = () => {
+const Modal = ({ modalAct }) => {
   const [name, setName] = useState();
   const [number, setNumber] = useState();
   const [person, setPerson] = useState();
@@ -13,6 +13,10 @@ const Modal = () => {
 
   return (
     <div className="bg-[#1A2031] w-[505px] max-sm:w-full absolute top-[100px] z-10 left-[50%] translate-x-[-50%] flex flex-col ">
+      <IoClose
+        onClick={()=>modalAct.setModal(false)}
+        className="absolute text-4xl text-white top-5 right-5 "
+      />
       <h2 className="text-[24px] text-center mt-[65px] mb-10 text-white">
         Bron qilish
       </h2>
