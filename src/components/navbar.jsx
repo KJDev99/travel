@@ -1,13 +1,11 @@
 import { useState, createContext } from "react";
 import { MdOutlineMenu } from "react-icons/md";
 import Modal from "./modal";
+import { Link } from "react-router-dom";
 
 export const MyContext = createContext();
 const Navbar = ({ modal }) => {
   const [active, setActive] = useState(true);
-
-  console.log(modal.setModal);
-  console.log(modal.modal);
 
   function menuClick() {
     setActive(!active);
@@ -22,9 +20,9 @@ const Navbar = ({ modal }) => {
     <div className="bg-[#1A2031] h-[92px]">
       <div className="container mx-auto">
         <div className="flex justify-between items-center h-[92px]">
-          <div className="logo flex items-center h-full">
+          <Link to={"/"} className="logo flex items-center h-full">
             <img className="max-md:w-[160px]" src="./Logo.svg" alt="" />
-          </div>
+          </Link>
           <ul
             className={
               active
@@ -32,9 +30,12 @@ const Navbar = ({ modal }) => {
                 : `flex items-center h-full max-md:absolute max-md:z-20 max-md:flex-col max-md:bg-[#1A2031] max-md:h-max max-md:w-[350px] max-md:left-[50%] max-md:translate-x-[-50%] max-md:rounded max-md:top-[120px] ease-linear`
             }
           >
-            <li className="text-white md:ml-8 max-md:pt-8 max-md:pb-2">
+            <Link
+              to={"/about"}
+              className="text-white md:ml-8 max-md:pt-8 max-md:pb-2"
+            >
               Biz haqimizda
-            </li>
+            </Link>
             <li className="text-white md:ml-8 max-md:py-2">Mehmonhonalar</li>
             <li className="md:ml-8 text-white max-md:py-2">
               <select className="bg-[#1A2031] border-none outline-none text-white">
