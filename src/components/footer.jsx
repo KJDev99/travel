@@ -1,3 +1,4 @@
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="container mx-auto">
@@ -42,6 +43,17 @@ const Footer = () => {
               +998 90 010-85-10
             </p>
           </a>
+          <div className="flex">
+            <div className="h-10 w-10 mr-6 rounded-full icon_shadow">
+              <FaFacebookF className="" />
+            </div>
+            <div className="h-10 w-10 mr-6 rounded-full icon_shadow">
+              <FaInstagram className="" />
+            </div>
+            <div className="h-10 w-10 mr-6 rounded-full icon_shadow">
+              <FaTwitter className="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

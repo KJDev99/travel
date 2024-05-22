@@ -56,7 +56,7 @@ const Modal = () => {
         id="person"
         value={person}
         onChange={(e) => setPerson(e.target.person)}
-        mask="999"
+        mask="99"
         placeholder="Kishi soni"
       />
 

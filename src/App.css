@@ -26,3 +26,29 @@
   height: 290px;
   object-fit: cover;
 }
+.icon_shadow {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300 !important;
+}
+.icon_shadow:hover {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  /* angular */
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgb(184, 210, 241),
+    rgb(242, 137, 170),
+    rgb(198, 139, 240),
+    rgb(209, 100, 218),
+    rgb(201, 99, 232),
+    rgb(191, 194, 232),
+    rgb(255, 201, 153),
+    rgb(208, 216, 201),
+    rgb(186, 208, 241),
+    rgb(206, 216, 203),
+    rgba(255, 255, 255, 0)
+  );
+  color: white;
+}

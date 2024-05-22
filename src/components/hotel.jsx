@@ -28,7 +28,7 @@ export default function Hotel() {
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 50,
           },
         }}
@@ -36,7 +36,7 @@ export default function Hotel() {
         className="mySwiper"
       >
         <SwiperSlide className="bg-white rounded-lg">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel1.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
@@ -52,7 +52,7 @@ export default function Hotel() {
           </h3>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-lg ">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel2.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
@@ -68,7 +68,7 @@ export default function Hotel() {
           </h3>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-lg ">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel3.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
@@ -84,7 +84,7 @@ export default function Hotel() {
           </h3>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-lg ">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel4.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
@@ -100,7 +100,7 @@ export default function Hotel() {
           </h3>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-lg ">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel1.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
@@ -116,7 +116,7 @@ export default function Hotel() {
           </h3>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-lg ">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel2.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
@@ -132,7 +132,7 @@ export default function Hotel() {
           </h3>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-lg ">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel3.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
@@ -148,7 +148,7 @@ export default function Hotel() {
           </h3>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-lg ">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel4.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
@@ -164,7 +164,7 @@ export default function Hotel() {
           </h3>
         </SwiperSlide>
         <SwiperSlide className="bg-white rounded-lg ">
-          <img className="rounded-lg" src="./test.png" alt="" />
+          <img className="rounded-lg" src="./hotel1.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
             <div className="flex ">
