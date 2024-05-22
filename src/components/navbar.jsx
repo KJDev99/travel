@@ -47,33 +47,34 @@ const Navbar = ({ modal }) => {
                 >
                   Turizm turlari
                 </option>
-                <option className="bg-[#1A2031]" value="Qaysidir Tur 1">
-                  Qaysidir Tur 1
+                <option className="bg-[#1A2031]" value="Sayohatlar">
+                  Sayohatlar
                 </option>
-                <option className="bg-[#1A2031]" value="Qaysidir Tur 2">
-                  Qaysidir Tur 2
+                <option className="bg-[#1A2031]" value="Ichki turizm">
+                  Ichki turizm
                 </option>
-                <option className="bg-[#1A2031]" value="Qaysidir Tur 3">
-                  Qaysidir Tur 3
+                <option className="bg-[#1A2031]" value="Kiruvchi turizm">
+                  Kiruvchi turizm
                 </option>
               </select>
             </li>
             <li className="text-white md:ml-8 max-md:py-2">Xizmarlar</li>
-            <li className="md:ml-8 max-md:py-2">
+            <li className="text-white md:ml-8 max-md:py-2">Bog’lanish</li>
+            <li className="md:ml-8 max-md:pt-2 max-md:pb-8">
               <select className="bg-[#1A2031] border-none outline-none text-white">
-                <option className="bg-[#1A2031]">Uzb</option>
-                <option className="bg-[#1A2031]">Eng</option>
-                <option className="bg-[#1A2031]">Rus</option>
+                <option className="bg-[#1A2031]">Uz</option>
+                <option className="bg-[#1A2031]">En</option>
+                <option className="bg-[#1A2031]">Ru</option>
               </select>
             </li>
-            <li className="md:ml-8 max-md:pt-2 max-md:pb-8">
+            {/* <li className="md:ml-8 max-md:pt-2 max-md:pb-8">
               <button
                 onClick={modalClick}
                 className="py-4 px-6 rounded-xl text-white button_gradient"
               >
                 Joy band qilish
               </button>
-            </li>
+            </li> */}
           </ul>
           <MdOutlineMenu
             onClick={menuClick}

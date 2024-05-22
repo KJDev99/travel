@@ -47,8 +47,8 @@ const About = () => {
         Bizning sertifikatlarimiz
       </h2>
       <div className="flex justify-around max-md:flex-col mb-16">
-        <img src="./sertifikat11.png" alt="sertifikat1" />
-        <img src="./sertifikat22.png" alt="sertifikat2" />
+        <img className="w-[290px]" src="./11.webp" alt="sertifikat1" />
+        <img className="w-[290px]" src="./22.webp" alt="sertifikat2" />
       </div>
     </div>
   );

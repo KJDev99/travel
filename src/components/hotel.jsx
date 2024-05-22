@@ -3,13 +3,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import "../index.css";
+import { Pagination } from "swiper/modules";
 
 import { IoMdStar } from "react-icons/io";
 
 export default function Hotel() {
   return (
-    <div className="bg-[#1A2031] pb-[200px]">
-      <h2 className="pt-[60px] pb-[100px] text-center text-[50px] text-white max-md:text-4xl">
+    <div className="bg-[#1A2031] pb-[120px] max-md:pb-16">
+      <h2 className="pt-[60px] pb-[100px] text-center text-[50px] text-white max-md:text-3xl max-md:pt-10 max-md:pb-12">
         Ekskluziv mehmonxonalar
       </h2>
       <Swiper
@@ -32,8 +33,8 @@ export default function Hotel() {
             spaceBetween: 50,
           },
         }}
-        // modules={[Pagination]}
-        className="mySwiper"
+        modules={[Pagination]}
+        className="mySwiper container"
       >
         <SwiperSlide className="bg-white rounded-lg">
           <img className="rounded-lg" src="./hotel1.png" alt="" />

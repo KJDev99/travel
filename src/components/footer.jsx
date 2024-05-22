@@ -3,28 +3,28 @@ const Footer = () => {
   return (
     <div className="container mx-auto">
       <div className="flex justify-between mb-10 max-md:flex-col">
-        <div className="w-1/4 max-md:w-full">
+        <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
           <img className="mb-4 max-md:w-[160px]" src="./Logo.svg" alt="Logo" />
           <div className="flex">
             <img className="mr-8" src="./sertifikat1.png" alt="sertifikat1" />
             <img src="./sertifikat2.png" alt="sertifikat2" />
           </div>
         </div>
-        <div className="w-1/4 max-md:w-full">
-          <h3 className="font-semibold mb-4">Biz haqimizda</h3>
-          <p className="font-normal mb-6">Home</p>
-          <p className="font-normal mb-6">Biz haqimizda</p>
-          <p className="font-normal mb-6">Xizmarlar</p>
+        <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
+          <h3 className="font-semibold mb-4 max-md:my-2">Biz haqimizda</h3>
+          <p className="font-normal mb-6 max-md:mb-2">Home</p>
+          <p className="font-normal mb-6 max-md:mb-2">Biz haqimizda</p>
+          <p className="font-normal mb-6 max-md:mb-2">Xizmarlar</p>
         </div>
-        <div className="w-1/4 max-md:w-full">
-          <h3 className="font-semibold mb-4">Turizm turlari</h3>
-          <p className="font-normal mb-6">Ichki turizm</p>
-          <p className="font-normal mb-6">Tashqi turizm</p>
-          <p className="font-normal mb-6">Kiruvchi turizm</p>
-          <p className="font-normal mb-6">Mehmonhonalar</p>
+        <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
+          <h3 className="font-semibold mb-4 max-md:my-2">Turizm turlari</h3>
+          <p className="font-normal mb-6 max-md:mb-2">Ichki turizm</p>
+          <p className="font-normal mb-6 max-md:mb-2">Tashqi turizm</p>
+          <p className="font-normal mb-6 max-md:mb-2">Kiruvchi turizm</p>
+          <p className="font-normal mb-6 max-md:mb-2">Mehmonhonalar</p>
         </div>
-        <div className="w-1/4 max-md:w-full">
-          <h3 className="font-semibold mb-4">Kontaktlar</h3>
+        <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
+          <h3 className="font-semibold mb-4 max-md:my-2">Kontaktlar</h3>
           <a className="flex mb-6">
             <img className="mr-3" src="./adress.svg" alt="email" />
             <p className="text-[14px] text-[rgba(0,0,0,0.6)]">
