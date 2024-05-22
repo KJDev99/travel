@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
@@ -9,11 +10,12 @@ import Tur from "./components/tur";
 import Navbar from "./components/navbar";
 
 function App() {
+  const [modal, setModal] = useState(false);
   return (
     <div>
       <NavbarTop />
-      <Navbar />
-      <Header />
+      <Navbar modal={{ modal, setModal }} />
+      <Header modal={{ modal, setModal }}/>
       <Tur />
       <Hizmat />
       <Hotel />

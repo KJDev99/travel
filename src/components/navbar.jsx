@@ -1,16 +1,21 @@
-import { useState } from "react";
+import { useState, createContext } from "react";
 import { MdOutlineMenu } from "react-icons/md";
 import Modal from "./modal";
 
-const Navbar = () => {
-  const [active, setActive] = useState(false);
-  const [modal, setModal] = useState(false);
+export const MyContext = createContext();
+const Navbar = ({ modal }) => {
+  const [active, setActive] = useState(true);
+
+  console.log(modal.setModal);
+  console.log(modal.modal);
 
   function menuClick() {
     setActive(!active);
   }
-  function addModal() {
-    setModal(!modal);
+
+  function modalClick() {
+    setActive(true);
+    modal.setModal(!modal.modal);
   }
 
   return (
@@ -62,7 +67,7 @@ const Navbar = () => {
             </li>
             <li className="md:ml-8 max-md:pt-2 max-md:pb-8">
               <button
-                onClick={addModal}
+                onClick={modalClick}
                 className="py-4 px-6 rounded-xl text-white button_gradient"
               >
                 Joy band qilish
@@ -74,7 +79,7 @@ const Navbar = () => {
             className="text-white text-4xl md:hidden cursor-pointer"
           />
         </div>
-        {modal && <Modal addModal={setModal} />}
+        {modal.modal && <Modal modal={modal} />}
       </div>
     </div>
   );
