@@ -1,13 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 import "../index.css";
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from "swiper/modules";
 
 const Header = ({ modal }) => {
   return (
@@ -17,7 +17,11 @@ const Header = ({ modal }) => {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination]}
         className="mySwiper  rounded"
       >
         <SwiperSlide className="bg-transparent ">
