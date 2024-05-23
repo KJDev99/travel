@@ -1,0 +1,16 @@
+{
+  "navbar": {
+    "menu1": "About Us",
+    "menu2": "Hotels",
+    "menu3": "Types of tourism",
+    "menu4": "Travels",
+    "menu5": "Domestic Tourism",
+    "menu6": "Inbound Tourism",
+    "menu7": "Foreign Tourism",
+    "menu8": "Services",
+    "menu9": "Contact"
+  },
+  "footer": {
+    "test": "this is a test en"
+  }
+}

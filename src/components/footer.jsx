@@ -1,5 +1,7 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <div className="container mx-auto">
       <div className="flex justify-between mb-10 max-md:flex-col">
@@ -11,20 +13,20 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
-          <h3 className="font-semibold mb-4 max-md:my-2">Biz haqimizda</h3>
+          <h3 className="font-semibold mb-4 max-md:my-2">{t("navbar.menu1")}</h3>
           <p className="font-normal mb-6 max-md:mb-2">Home</p>
-          <p className="font-normal mb-6 max-md:mb-2">Biz haqimizda</p>
-          <p className="font-normal mb-6 max-md:mb-2">Xizmarlar</p>
+          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu1")}</p>
+          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu8")}</p>
         </div>
         <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
-          <h3 className="font-semibold mb-4 max-md:my-2">Turizm turlari</h3>
-          <p className="font-normal mb-6 max-md:mb-2">Ichki turizm</p>
-          <p className="font-normal mb-6 max-md:mb-2">Tashqi turizm</p>
-          <p className="font-normal mb-6 max-md:mb-2">Kiruvchi turizm</p>
-          <p className="font-normal mb-6 max-md:mb-2">Mehmonhonalar</p>
+          <h3 className="font-semibold mb-4 max-md:my-2">{t("navbar.menu3")}</h3>
+          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu5")}</p>
+          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu7")}</p>
+          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu6")}</p>
+          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu2")}</p>
         </div>
         <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
-          <h3 className="font-semibold mb-4 max-md:my-2">Kontaktlar</h3>
+          <h3 className="font-semibold mb-4 max-md:my-2">{t("navbar.menu9")}</h3>
           <a className="flex mb-6">
             <img className="mr-3" src="./adress.svg" alt="email" />
             <p className="text-[14px] text-[rgba(0,0,0,0.6)]">

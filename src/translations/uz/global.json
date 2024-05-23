@@ -1,0 +1,17 @@
+{
+    "navbar": {
+        "menu1": "Biz haqimizda",
+        "menu2": "Mehmonhonalar",
+        "menu3": "Turizm turlari",
+        "menu4": "Sayohatlar",
+        "menu5": "Ichki turizm",
+        "menu6": "Kiruvchi turizm",
+        "menu7": "Tashqi turizm",
+        "menu8": "Xizmatlar",
+        "menu9": "Bog'lanish"
+      },
+    "footer": {
+      "test": "this is a test uz"
+    }
+  }
+  
