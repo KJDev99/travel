@@ -6,12 +6,14 @@ import "../index.css";
 import { Pagination } from "swiper/modules";
 
 import { IoMdStar } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 export default function Hotel() {
+  const [t] = useTranslation("global");
   return (
     <div className="bg-[#1A2031] pb-[120px] max-md:pb-16">
       <h2 className="pt-[60px] pb-[100px] text-center text-[50px] text-white max-md:text-3xl max-md:pt-10 max-md:pb-12">
-        Ekskluziv mehmonxonalar
+        {t("mehmonxona")}
       </h2>
       <Swiper
         slidesPerView={1}

@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
 const Hizmat = () => {
+  const [t] = useTranslation("global");
   return (
     <div className="mt-[150px] mb-[170px] max-md:my-[80px]">
       <div className="container mx-auto ">
         <h2 className="text-center text-[#14183E] text-[50px] font-bold mb-8 max-md:text-3xl">
-          Biz eng yaxshi hizmatlarni taklif qilamiz
+          {t('hizmat')}
         </h2>
         <div className="relative grid lg:grid-cols-5 max-lg:grid-cols-2 max-md:grid-cols-1 gap-[40px] max-md:gap-[20px] mb-[100px]">
           <div className="max-md:hidden absolute right-[-50px] top-[-140px]">

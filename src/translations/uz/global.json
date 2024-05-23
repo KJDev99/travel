@@ -1,17 +1,26 @@
 {
-    "navbar": {
-        "menu1": "Biz haqimizda",
-        "menu2": "Mehmonhonalar",
-        "menu3": "Turizm turlari",
-        "menu4": "Sayohatlar",
-        "menu5": "Ichki turizm",
-        "menu6": "Kiruvchi turizm",
-        "menu7": "Tashqi turizm",
-        "menu8": "Xizmatlar",
-        "menu9": "Bog'lanish"
-      },
-    "footer": {
-      "test": "this is a test uz"
-    }
-  }
-  
+  "navbar": {
+    "menu1": "Biz haqimizda",
+    "menu2": "Mehmonhonalar",
+    "menu3": "Turizm turlari",
+    "menu4": "Sayohatlar",
+    "menu5": "Ichki turizm",
+    "menu6": "Kiruvchi turizm",
+    "menu7": "Tashqi turizm",
+    "menu8": "Xizmatlar",
+    "menu9": "Bog'lanish"
+  },
+  "tur": "Qaynoq turlar",
+  "hizmat": "Biz eng yaxshi hizmatlarni taklif qilamiz",
+  "mehmonxona": "Ekskluziv mehmonxonalar",
+  "sayohat": "Sayohat uchun tanlovlar",
+  "about1":"O'zbekiston fuqarolari uchun viza xizmatlari",
+  "about2":"Mamlakatlar o'rtasidagi viza rejimi xalqaro munosabatlar va sayohatlarning muhim jihati hisoblanadi. O‘zbekiston fuqarolari uchun ham, boshqa davlat fuqarolari uchun ham xorijiy davlatlarga borish uchun viza olishning ma’lum talablari va tartiblari mavjud.",
+  "about3":"Viza olish tartibi",
+  "about4":"O‘zbekiston fuqarolari viza olish uchun muayyan tartib-qoidalarga rioya qilishlari kerak. Bunga ariza topshirish, pasport va fotosuratlar kabi kerakli hujjatlarni taqdim etish va viza toʻlovini toʻlash kiradi. Ba'zi hollarda siz sayohat qilishni rejalashtirayotgan mamlakatning konsulligi yoki elchixonasida shaxsiy suhbat talab qilinishi mumkin.",
+  "about5":"Elektron vizalar (eVisa)",
+  "about6":"Viza jarayonini soddalashtirish uchun ko'plab mamlakatlar elektron viza (eVisa) xizmatini taklif qiladi. Bu O‘zbekiston fuqarolariga onlayn tarzda viza olish va uni elektron shaklda olish imkonini beradi³. eVisa uchun ariza berish va olish jarayoni odatda standart viza tartibiga qaraganda tezroq va qulayroqdir.",
+  "about7":"O‘zbekiston fuqarolari uchun viza xizmatlari boradigan davlatga qarab turli tartib va ​​talablarni o‘z ichiga oladi. Barcha kerakli hujjatlar o'z vaqtida va to'g'ri bajarilishini ta'minlash uchun viza qoidalari va talablari bilan oldindan tanishib chiqish muhimdir. Elektron vizalar O‘zbekiston fuqarolari uchun xalqaro sayohatlarni yanada qulayroq qilib, kirish ruxsatnomasini olishning qulay va tezkor usulini taklif etadi.",
+  "about8":"EASYBOOKING kompaniyasi viza xizmatlarini taqdim etadi; agar sizga malakali yordam kerak bo'lsa, bizning operatorlarimizga murojaat qiling.",
+  "about9": "Bizning sertifikatlarimiz"
+}

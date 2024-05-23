@@ -1,10 +1,9 @@
-import { useState, createContext } from "react";
+import { useState } from "react";
 import { MdOutlineMenu } from "react-icons/md";
 import Modal from "./modal";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export const MyContext = createContext();
 const Navbar = ({ modal }) => {
   const [active, setActive] = useState(true);
   const [lang, setLanguage] = useState("uz");
