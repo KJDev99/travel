@@ -11,17 +11,17 @@ const Navbar = ({ modal }) => {
     setActive(!active);
   }
 
-  function modalClick() {
-    setActive(true);
-    modal.setModal(!modal.modal);
-  }
+  // function modalClick() {
+  //   setActive(true);
+  //   modal.setModal(!modal.modal);
+  // }
 
   return (
     <div className="bg-[#1A2031] h-[92px]">
       <div className="container mx-auto">
         <div className="flex justify-between items-center h-[92px]">
           <Link to={"/"} className="logo flex items-center h-full">
-            <img className="max-md:w-[160px]" src="./Logo.svg" alt="" />
+            <img className="max-md:w-[190px] w-[230px]" src="./Atlas luxe logo.png" alt="" />
           </Link>
           <ul
             className={

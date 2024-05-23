@@ -36,7 +36,7 @@ export default function Hotel() {
         modules={[Pagination]}
         className="mySwiper container"
       >
-        <SwiperSlide className="bg-white rounded-lg">
+        <SwiperSlide className="bg-white rounded-2xl">
           <img className="rounded-lg" src="./hotel1.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
@@ -52,7 +52,7 @@ export default function Hotel() {
             CLUB PRIVE BY RIXOS GOCEK
           </h3>
         </SwiperSlide>
-        <SwiperSlide className="bg-white rounded-lg ">
+        <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel2.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
@@ -68,7 +68,7 @@ export default function Hotel() {
             CLUB PRIVE BY RIXOS GOCEK
           </h3>
         </SwiperSlide>
-        <SwiperSlide className="bg-white rounded-lg ">
+        <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel3.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
@@ -84,7 +84,7 @@ export default function Hotel() {
             CLUB PRIVE BY RIXOS GOCEK
           </h3>
         </SwiperSlide>
-        <SwiperSlide className="bg-white rounded-lg ">
+        <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel4.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
@@ -100,7 +100,7 @@ export default function Hotel() {
             CLUB PRIVE BY RIXOS GOCEK
           </h3>
         </SwiperSlide>
-        <SwiperSlide className="bg-white rounded-lg ">
+        <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel1.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
@@ -116,7 +116,7 @@ export default function Hotel() {
             CLUB PRIVE BY RIXOS GOCEK
           </h3>
         </SwiperSlide>
-        <SwiperSlide className="bg-white rounded-lg ">
+        <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel2.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
@@ -132,7 +132,7 @@ export default function Hotel() {
             CLUB PRIVE BY RIXOS GOCEK
           </h3>
         </SwiperSlide>
-        <SwiperSlide className="bg-white rounded-lg ">
+        <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel3.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
@@ -148,7 +148,7 @@ export default function Hotel() {
             CLUB PRIVE BY RIXOS GOCEK
           </h3>
         </SwiperSlide>
-        <SwiperSlide className="bg-white rounded-lg ">
+        <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel4.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
@@ -164,7 +164,7 @@ export default function Hotel() {
             CLUB PRIVE BY RIXOS GOCEK
           </h3>
         </SwiperSlide>
-        <SwiperSlide className="bg-white rounded-lg ">
+        <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel1.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
             <span>Antalya</span>
