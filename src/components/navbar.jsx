@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MdOutlineMenu } from "react-icons/md";
 import Modal from "./modal";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Navbar = ({ modal }) => {
@@ -22,6 +22,13 @@ const Navbar = ({ modal }) => {
   const handleChangeLanguage = (event) => {
     setLanguage(event.target.value);
     i18n.changeLanguage(event.target.value);
+  };
+
+  const navigate = useNavigate();
+
+  const handleChange = (event) => {
+    const path = event.target.value;
+    navigate(path);
   };
 
   return (
@@ -48,36 +55,41 @@ const Navbar = ({ modal }) => {
             >
               {t("navbar.menu1")}
             </Link>
-            <li className="text-white md:ml-8 max-md:py-2">
+            <Link
+              to={"/mehmonxonalar"}
+              className="text-white md:ml-8 max-md:py-2"
+            >
               {t("navbar.menu2")}
-            </li>
-            <li className="md:ml-8 text-white max-md:py-2">
-              <select className="bg-[#1A2031] border-none outline-none text-white">
-                <option
-                  className="bg-[#1A2031]"
-                  selected
-                  disabled
-                  value="Turizm turlari"
-                >
-                  {t("navbar.menu3")}
-                </option>
-                <option className="bg-[#1A2031]" value="Sayohatlar">
-                  {t("navbar.menu4")}
-                </option>
-                <option className="bg-[#1A2031]" value="Ichki turizm">
-                  {t("navbar.menu5")}
-                </option>
-                <option className="bg-[#1A2031]" value="Kiruvchi turizm">
-                  {t("navbar.menu6")}
-                </option>
-              </select>
-            </li>
-            <li className="text-white md:ml-8 max-md:py-2">
+            </Link>
+            <select
+              onChange={handleChange}
+              defaultValue=""
+              className="bg-[#1A2031] border-none outline-none text-white max-md:py-2 md:ml-8"
+            >
+              <option
+                className="bg-[#1A2031]"
+                selected
+                disabled
+                value="Turizm turlari"
+              >
+                {t("navbar.menu3")}
+              </option>
+              <option className="bg-[#1A2031]" value="/sayohatlar">
+                {t("navbar.menu4")}
+              </option>
+              <option value="/ichkiturizm" className="bg-[#1A2031]">
+                {t("navbar.menu5")}
+              </option>
+              <option className="bg-[#1A2031]" value="/kiruvchiturizm">
+                {t("navbar.menu6")}
+              </option>
+            </select>
+            <Link to={"/xizmatlar"} className="text-white md:ml-8 max-md:py-2">
               {t("navbar.menu8")}
-            </li>
-            <li className="text-white md:ml-8 max-md:py-2">
+            </Link>
+            <Link to={"/contact"} className="text-white md:ml-8 max-md:py-2">
               {t("navbar.menu9")}
-            </li>
+            </Link>
             <li className="md:ml-8 max-md:pt-2 max-md:pb-8">
               <select
                 value={lang}

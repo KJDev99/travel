@@ -3,7 +3,7 @@ const About = () => {
   const [t] = useTranslation("global");
   return (
     <div className="container mx-auto">
-      <h2 className="mt-[58px] mb-4 text-[#14183E] text-[50px] font-bold">
+      <h2 className="mt-[58px] mb-4 text-[#14183E] text-[50px] font-bold text-center max-md:text-4xl">
         {t("navbar.menu1")}
       </h2>
       <p className="font-medium mb-4">{t("about1")}</p>

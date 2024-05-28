@@ -55,3 +55,42 @@ body {
   );
   color: white;
 }
+
+.active {
+  background: -webkit-linear-gradient(90deg, #bd8e2b 100%, #737373 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin-top: 33px;
+}
+.active::after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  border-radius: 4px 4px 0px 0px;
+  background: linear-gradient(90deg, #bd8e2b 1%, #737373 100%);
+  margin-top: 27px;
+}
+.Mui-selected {
+  background: linear-gradient(
+    90deg,
+    rgb(189, 142, 43) 1%,
+    rgb(115, 115, 115) 100%
+  );
+  color: rgba(255, 255, 255, 1) !important;
+  border-radius: 8px;
+}
+.css-1gsv261 {
+  border: none !important;
+}
+.MuiTabs-indicator {
+  display: none;
+}
+@media (max-width: 768px) {
+  .css-heg063-MuiTabs-flexContainer {
+    flex-direction: column;
+  }
+}

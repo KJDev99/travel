@@ -29,7 +29,7 @@ const Header = ({ modal }) => {
             src="./hero1.jpg"
             alt="hero"
             className="!w-full mx-auto"
-            // onClick={() => modal.setModal(!modal.modal)}
+            onClick={() => modal.setModal(!modal.modal)}
           />
         </SwiperSlide>
         <SwiperSlide className="bg-transparent ">
@@ -37,7 +37,7 @@ const Header = ({ modal }) => {
             src="./hero2.jpg"
             alt="hero"
             className="!w-full mx-auto"
-            // onClick={() => modal.setModal(!modal.modal)}
+            onClick={() => modal.setModal(!modal.modal)}
           />
         </SwiperSlide>
       </Swiper>

@@ -11,6 +11,13 @@ export default {
         "2xl": "6rem",
       },
     },
+    extend: {
+      colors: {
+        "title-color": "rgba(17, 43, 60, 1)",
+        "text-color": "rgba(189, 142, 43, 1)",
+        "tabs-bg": "rgba(217, 217, 217, 1)",
+      },
+    },
   },
   plugins: [],
 };
