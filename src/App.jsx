@@ -6,6 +6,7 @@ import Contacts from "./pages/contacts";
 import Xizmatlar from "./pages/xizmatlar";
 import Mehmonxonalar from "./pages/mehmonxonalar";
 import Ichkiturizm from "./pages/ichkiturizm";
+import Tashqiturizm from "./pages/tashqiturizm";
 import Kiruvchiturizm from "./pages/kiruvchiturizm";
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/ichkiturizm" element={<Ichkiturizm />} />
         <Route path="/kiruvchiturizm" element={<Kiruvchiturizm />} />
         <Route path="/ichkiturizm" element={<Ichkiturizm />} />
+        <Route path="/tashqiturizm" element={<Tashqiturizm />} />
 
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>

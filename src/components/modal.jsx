@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import { InputMask } from "primereact/inputmask";
 
@@ -6,15 +6,32 @@ const Modal = ({ modalAct }) => {
   const [name, setName] = useState();
   const [number, setNumber] = useState();
   const [person, setPerson] = useState();
+  const [scrollY, setScrollY] = useState(0);
 
   function bron() {
     location.reload();
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="bg-[#1A2031] w-[505px] max-sm:w-full absolute top-[100px] z-10 left-[50%] translate-x-[-50%] flex flex-col ">
+    <div
+      className={`bg-[#1A2031] w-[505px] max-sm:w-full absolute z-10 left-[50%] translate-x-[-50%] flex flex-col`}
+      style={{ top: `${scrollY+50}px` }}
+    >
       <IoClose
-        onClick={()=>modalAct.setModal(false)}
+        onClick={() => modalAct.setModal(false)}
         className="absolute text-4xl text-white top-5 right-5 "
       />
       <h2 className="text-[24px] text-center mt-[65px] mb-10 text-white">

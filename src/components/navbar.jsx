@@ -13,12 +13,7 @@ const Navbar = ({ modal }) => {
   }
 
   const [t, i18n] = useTranslation("global");
-
-  // function modalClick() {
-  //   setActive(true);
-  //   modal.setModal(!modal.modal);
-  // }
-
+  
   const handleChangeLanguage = (event) => {
     setLanguage(event.target.value);
     i18n.changeLanguage(event.target.value);
@@ -66,19 +61,11 @@ const Navbar = ({ modal }) => {
               defaultValue=""
               className="bg-[#1A2031] border-none outline-none text-white max-md:py-2 md:ml-8"
             >
-              <option
-                className="bg-[#1A2031]"
-                selected
-                disabled
-                value="Turizm turlari"
-              >
-                {t("navbar.menu3")}
-              </option>
-              <option className="bg-[#1A2031]" value="/sayohatlar">
-                {t("navbar.menu4")}
-              </option>
               <option value="/ichkiturizm" className="bg-[#1A2031]">
                 {t("navbar.menu5")}
+              </option>
+              <option className="bg-[#1A2031]" value="/tashqiturizm">
+                {t("navbar.menu7")}
               </option>
               <option className="bg-[#1A2031]" value="/kiruvchiturizm">
                 {t("navbar.menu6")}

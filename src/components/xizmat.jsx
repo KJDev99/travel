@@ -47,12 +47,17 @@ export default function BasicTabs() {
 
   return (
     <Box className="container mx-auto mb-20" sx={{ width: "100%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+      <Box
+        className="overflow-x-auto scroll"
+        sx={{ borderBottom: 1, borderColor: "divider" }}
+      >
         <Tabs
           value={value}
           onChange={handleChange}
+          variant="scrollable"
+          scrollButtons="auto"
           aria-label="basic tabs example"
-          className="flex flex-col justify-center mx-auto w-max bg-tabs-bg mt-[45px] rounded-xl font-medium"
+          className="flex flex-col justify-center mx-auto w-max bg-tabs-bg mt-[45px] rounded-xl font-medium "
         >
           <Tab className="font-medium text-sm" label="Viza" {...a11yProps(0)} />
           <Tab
@@ -80,7 +85,11 @@ export default function BasicTabs() {
       <CustomTabPanel value={value} index={0}>
         <div className="">
           <div className="flex items-center mb-5">
-            <img className="max-md:w-[90px] md:mr-10 max-md:mr-3" src="./hizmat1.svg" alt="" />
+            <img
+              className="max-md:w-[90px] md:mr-10 max-md:mr-3"
+              src="./hizmat1.svg"
+              alt=""
+            />
             <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
               Vizalarni olib berish
             </h2>
@@ -102,29 +111,32 @@ export default function BasicTabs() {
             tarzda viza olish va uni elektron shaklda olish imkonini beradi³.
             eVisa uchun ariza berish va olish jarayoni odatda standart viza
             tartibiga qaraganda tezroq va qulayroqdir. O‘zbekiston fuqarolari
-            uchun viza xizmatlari boradigan davlatga qarab turli tartib va
-            ​​talablarni o‘z ichiga oladi. Barcha kerakli hujjatlar o'z vaqtida
-            va to'g'ri bajarilishini ta'minlash uchun viza qoidalari va
-            talablari bilan oldindan tanishib chiqish muhimdir. Elektron vizalar
-            O‘zbekiston fuqarolari uchun xalqaro sayohatlarni yanada qulayroq
-            qilib, kirish ruxsatnomasini olishning qulay va tezkor usulini
-            taklif etadi. ATLAS LUXE kompaniyasi viza xizmatlarini taqdim etadi;
-            agar sizga malakali yordam kerak bo'lsa, bizning operatorlarimizga
-            murojaat qiling.
+            uchun viza xizmatlari boradigan davlatga qarab turli tartib o‘z
+            ichiga oladi. Barcha kerakli hujjatlar o'z vaqtida va to'g'ri
+            bajarilishini ta'minlash uchun viza qoidalari va talablari bilan
+            oldindan tanishib chiqish muhimdir. Elektron vizalar O‘zbekiston
+            fuqarolari uchun xalqaro sayohatlarni yanada qulayroq qilib, kirish
+            ruxsatnomasini olishning qulay va tezkor usulini taklif etadi. ATLAS
+            LUXE kompaniyasi viza xizmatlarini taqdim etadi; agar sizga malakali
+            yordam kerak bo'lsa, bizning operatorlarimizga murojaat qiling.
           </p>
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
         <div className="">
           <div className="flex items-center mb-5">
-            <img className="max-md:w-[90px] md:mr-10 max-md:mr-3" src="./hizmat2.svg" alt="" />
+            <img
+              className="max-md:w-[90px] md:mr-10 max-md:mr-3"
+              src="./hizmat2.svg"
+              alt=""
+            />
             <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
               Avia bilet
             </h2>
           </div>
           <p className="text-black/80 font-medium max-md:text-sm text-justify">
             O‘zbekiston fuqarolari uchun viza xizmatlari boradigan davlatga
-            qarab turli tartib va ​​talablarni o‘z ichiga oladi. Barcha kerakli
+            qarab turli tartib  o‘z ichiga oladi. Barcha kerakli
             hujjatlar o'z vaqtida va to'g'ri bajarilishini ta'minlash uchun viza
             qoidalari va talablari bilan oldindan tanishib chiqish muhimdir.
             Elektron vizalar O‘zbekiston fuqarolari uchun xalqaro sayohatlarni
@@ -138,7 +150,11 @@ export default function BasicTabs() {
       <CustomTabPanel value={value} index={2}>
         <div className="">
           <div className="flex items-center mb-5">
-            <img className="max-md:w-[90px] md:mr-10 max-md:mr-3" src="./hizmat3.svg" alt="" />
+            <img
+              className="max-md:w-[90px] md:mr-10 max-md:mr-3"
+              src="./hizmat3.svg"
+              alt=""
+            />
             <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
               Poyezd bilet
             </h2>
@@ -160,22 +176,25 @@ export default function BasicTabs() {
             tarzda viza olish va uni elektron shaklda olish imkonini beradi³.
             eVisa uchun ariza berish va olish jarayoni odatda standart viza
             tartibiga qaraganda tezroq va qulayroqdir. O‘zbekiston fuqarolari
-            uchun viza xizmatlari boradigan davlatga qarab turli tartib va
-            ​​talablarni o‘z ichiga oladi. Barcha kerakli hujjatlar o'z vaqtida
-            va to'g'ri bajarilishini ta'minlash uchun viza qoidalari va
-            talablari bilan oldindan tanishib chiqish muhimdir. Elektron vizalar
-            O‘zbekiston fuqarolari uchun xalqaro sayohatlarni yanada qulayroq
-            qilib, kirish ruxsatnomasini olishning qulay va tezkor usulini
-            taklif etadi. ATLAS LUXE kompaniyasi viza xizmatlarini taqdim etadi;
-            agar sizga malakali yordam kerak bo'lsa, bizning operatorlarimizga
-            murojaat qiling.
+            uchun viza xizmatlari boradigan davlatga qarab turli tartib o‘z
+            ichiga oladi. Barcha kerakli hujjatlar o'z vaqtida va to'g'ri
+            bajarilishini ta'minlash uchun viza qoidalari va talablari bilan
+            oldindan tanishib chiqish muhimdir. Elektron vizalar O‘zbekiston
+            fuqarolari uchun xalqaro sayohatlarni yanada qulayroq qilib, kirish
+            ruxsatnomasini olishning qulay va tezkor usulini taklif etadi. ATLAS
+            LUXE kompaniyasi viza xizmatlarini taqdim etadi; agar sizga malakali
+            yordam kerak bo'lsa, bizning operatorlarimizga murojaat qiling.
           </p>
         </div>
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
         <div className="">
           <div className="flex items-center mb-5">
-            <img className="max-md:w-[90px] md:mr-10 max-md:mr-3" src="./carrr.png" alt="" />
+            <img
+              className="max-md:w-[90px] md:mr-10 max-md:mr-3"
+              src="./carrr.png"
+              alt=""
+            />
 
             <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
               Avtomobil
@@ -199,14 +218,18 @@ export default function BasicTabs() {
       <CustomTabPanel value={value} index={4}>
         <div className="">
           <div className="flex items-center mb-5">
-            <img className="max-md:w-[90px] md:mr-10 max-md:mr-3" src="./hizmat4.svg" alt="" />
+            <img
+              className="max-md:w-[90px] md:mr-10 max-md:mr-3"
+              src="./hizmat4.svg"
+              alt=""
+            />
             <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
               Tarjimon
             </h2>
           </div>
           <p className="text-black/80 font-medium max-md:text-sm text-justify">
             O‘zbekiston fuqarolari uchun viza xizmatlari boradigan davlatga
-            qarab turli tartib va ​​talablarni o‘z ichiga oladi. Barcha kerakli
+            qarab turli tartib  o‘z ichiga oladi. Barcha kerakli
             hujjatlar o'z vaqtida va to'g'ri bajarilishini ta'minlash uchun viza
             qoidalari va talablari bilan oldindan tanishib chiqish muhimdir.
             Elektron vizalar O‘zbekiston fuqarolari uchun xalqaro sayohatlarni
