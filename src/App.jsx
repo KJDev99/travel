@@ -8,9 +8,11 @@ import Mehmonxonalar from "./pages/mehmonxonalar";
 import Ichkiturizm from "./pages/ichkiturizm";
 import Tashqiturizm from "./pages/tashqiturizm";
 import Kiruvchiturizm from "./pages/kiruvchiturizm";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,6 +23,7 @@ function App() {
         <Route path="/kiruvchiturizm" element={<Kiruvchiturizm />} />
         <Route path="/ichkiturizm" element={<Ichkiturizm />} />
         <Route path="/tashqiturizm" element={<Tashqiturizm />} />
+        
 
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>

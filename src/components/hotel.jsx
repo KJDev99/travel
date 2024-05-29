@@ -18,9 +18,11 @@ export default function Hotel() {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
+        loop={true}
+        initialSlide={1}
+        // pagination={{
+        //   clickable: true,
+        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -41,7 +43,7 @@ export default function Hotel() {
         <SwiperSlide className="bg-white rounded-2xl">
           <img className="rounded-lg" src="./hotel1.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
-            <span>Antalya</span>
+            <span>Antalya1</span>
             <div className="flex ">
               <IoMdStar className="text-[#FFA90F]" />
               <IoMdStar className="text-[#FFA90F]" />
@@ -57,7 +59,7 @@ export default function Hotel() {
         <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel2.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
-            <span>Antalya</span>
+            <span>Antalya2</span>
             <div className="flex ">
               <IoMdStar className="text-[#FFA90F]" />
               <IoMdStar className="text-[#FFA90F]" />
@@ -169,7 +171,7 @@ export default function Hotel() {
         <SwiperSlide className="bg-white rounded-2xl ">
           <img className="rounded-lg" src="./hotel1.png" alt="" />
           <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
-            <span>Antalya</span>
+            <span>Antalya10</span>
             <div className="flex ">
               <IoMdStar className="text-[#FFA90F]" />
               <IoMdStar className="text-[#FFA90F]" />

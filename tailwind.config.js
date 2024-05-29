@@ -18,6 +18,10 @@ export default {
         "tabs-bg": "rgba(217, 217, 217, 1)",
       },
     },
+    fontFamily: {
+      Poppins: ["Poppins", "sans-serif"],
+      Volkhov: ["Volkhov", "serif"],
+    },
   },
   plugins: [],
 };

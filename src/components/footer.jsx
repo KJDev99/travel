@@ -1,5 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 const Footer = () => {
   const [t, i18n] = useTranslation("global");
   return (
@@ -12,21 +13,33 @@ const Footer = () => {
             <img src="./sertifikat2.png" alt="sertifikat2" />
           </div>
         </div>
-        <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
-          <h3 className="font-semibold mb-4 max-md:my-2">{t("navbar.menu1")}</h3>
-          <p className="font-normal mb-6 max-md:mb-2">Home</p>
-          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu1")}</p>
-          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu8")}</p>
+        <div className="w-1/4 max-md:w-full flex flex-col max-md:items-center">
+          <h3 className="font-semibold mb-4 max-md:my-2">
+            {t("navbar.menu1")}
+          </h3>
+          <Link to={"/"} className="font-normal mb-6 max-md:mb-2">
+            Home
+          </Link>
+          <Link to={"/about"} className="font-normal mb-6 max-md:mb-2">
+            {t("navbar.menu1")}
+          </Link>
+          <Link to={"/xizmatlar"} className="font-normal mb-6 max-md:mb-2">
+            {t("navbar.menu8")}
+          </Link>
+        </div>
+        <div className="w-1/4 max-md:w-full flex flex-col max-md:items-center">
+          <h3 className="font-semibold mb-4 max-md:my-2">
+            {t("navbar.menu3")}
+          </h3>
+          <Link to={'/ichkiturizm'} className="font-normal mb-6 max-md:mb-2">{t("navbar.menu5")}</Link>
+          <Link to={'/tashqiturizm'} className="font-normal mb-6 max-md:mb-2">{t("navbar.menu7")}</Link>
+          <Link to={'/kiruvchiturizm'} className="font-normal mb-6 max-md:mb-2">{t("navbar.menu6")}</Link>
+          <Link to={'/mehmonxonalar'} className="font-normal mb-6 max-md:mb-2">{t("navbar.menu2")}</Link>
         </div>
         <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
-          <h3 className="font-semibold mb-4 max-md:my-2">{t("navbar.menu3")}</h3>
-          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu5")}</p>
-          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu7")}</p>
-          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu6")}</p>
-          <p className="font-normal mb-6 max-md:mb-2">{t("navbar.menu2")}</p>
-        </div>
-        <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
-          <h3 className="font-semibold mb-4 max-md:my-2">{t("navbar.menu9")}</h3>
+          <h3 className="font-semibold mb-4 max-md:my-2">
+            {t("navbar.menu9")}
+          </h3>
           <a className="flex mb-6">
             <img className="mr-3" src="./adress.svg" alt="email" />
             <p className="text-[14px] text-[rgba(0,0,0,0.6)]">

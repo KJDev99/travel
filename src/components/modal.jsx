@@ -27,25 +27,25 @@ const Modal = ({ modalAct }) => {
 
   return (
     <div
-      className={`bg-[#1A2031] w-[505px] max-sm:w-full absolute z-10 left-[50%] translate-x-[-50%] flex flex-col`}
-      style={{ top: `${scrollY+50}px` }}
+      className={`bg-white w-[505px] max-sm:w-full absolute z-10 left-[50%] translate-x-[-50%] flex flex-col rounded-md`}
+      style={{ top: `${scrollY + 50}px` }}
     >
       <IoClose
         onClick={() => modalAct.setModal(false)}
-        className="absolute text-4xl text-white top-5 right-5 "
+        className="absolute text-4xl text-title-color top-5 right-5 "
       />
-      <h2 className="text-[24px] text-center mt-[65px] mb-10 text-white">
+      <h2 className="text-[24px] text-center mt-[65px] mb-10 text-title-color font-Poppins">
         Bron qilish
       </h2>
 
       <label
         htmlFor="fish"
-        className="font-bold block ml-[60px] text-white mb-2"
+        className="font-bold block ml-[60px] text-title-color mb-2"
       >
         FISH:
       </label>
       <InputMask
-        className="w-[384px] h-[56px] px-4 bg-[#282D40] rounded mx-auto mb-6 text-white outline-none"
+        className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
         id="fish"
         value={name}
         onChange={(e) => setName(e.target.name)}
@@ -54,12 +54,12 @@ const Modal = ({ modalAct }) => {
       />
       <label
         htmlFor="phone"
-        className="font-bold block ml-[60px] text-white mb-2"
+        className="font-bold block ml-[60px] text-title-color mb-2"
       >
         Telefon raqam
       </label>
       <InputMask
-        className="w-[384px] h-[56px] px-4 bg-[#282D40] rounded mx-auto mb-6 text-white outline-none"
+        className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
         id="phone"
         value={number}
         onChange={(e) => setNumber(e.target.number)}
@@ -68,12 +68,12 @@ const Modal = ({ modalAct }) => {
       />
       <label
         htmlFor="person"
-        className="font-bold block ml-[60px] text-white mb-2 "
+        className="font-bold block ml-[60px] text-title-color mb-2 "
       >
         Kishi soni
       </label>
       <InputMask
-        className="w-[384px] h-[56px] px-4 bg-[#282D40] rounded mx-auto mb-6 text-white outline-none"
+        className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
         id="person"
         value={person}
         onChange={(e) => setPerson(e.target.person)}

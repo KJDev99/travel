@@ -13,7 +13,7 @@ const Navbar = ({ modal }) => {
   }
 
   const [t, i18n] = useTranslation("global");
-  
+
   const handleChangeLanguage = (event) => {
     setLanguage(event.target.value);
     i18n.changeLanguage(event.target.value);
@@ -40,13 +40,13 @@ const Navbar = ({ modal }) => {
           <ul
             className={
               active
-                ? `flex items-center h-full max-md:absolute max-md:z-20 max-md:flex-col max-md:bg-[#1A2031] max-md:h-max max-md:w-[350px] max-md:left-[50%] max-md:translate-x-[-50%] max-md:rounded max-md:top-[-320px] ease-linear`
-                : `flex items-center h-full max-md:absolute max-md:z-20 max-md:flex-col max-md:bg-[#1A2031] max-md:h-max max-md:w-[350px] max-md:left-[50%] max-md:translate-x-[-50%] max-md:rounded max-md:top-[120px] ease-linear`
+                ? `flex font-Poppins items-center h-full max-md:absolute max-md:z-20 max-md:flex-col max-md:bg-[#1A2031] max-md:h-max max-md:w-[350px] max-md:left-[50%] max-md:translate-x-[-50%] max-md:rounded max-md:top-[-320px] ease-linear`
+                : `flex font-Poppins items-center h-full max-md:absolute max-md:z-20 max-md:flex-col max-md:bg-[#1A2031] max-md:h-max max-md:w-[350px] max-md:left-[50%] max-md:translate-x-[-50%] max-md:rounded max-md:top-[120px] ease-linear`
             }
           >
             <Link
               to={"/about"}
-              className="text-white md:ml-8 max-md:pt-8 max-md:pb-2"
+              className="text-white md:ml-8 max-md:pt-8 max-md:pb-2 "
             >
               {t("navbar.menu1")}
             </Link>
@@ -61,6 +61,7 @@ const Navbar = ({ modal }) => {
               defaultValue=""
               className="bg-[#1A2031] border-none outline-none text-white max-md:py-2 md:ml-8"
             >
+              <option selected disabled value="">Turizm Turlari</option>
               <option value="/ichkiturizm" className="bg-[#1A2031]">
                 {t("navbar.menu5")}
               </option>
