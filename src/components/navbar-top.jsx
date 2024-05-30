@@ -4,15 +4,15 @@ const NavbarTop = () => {
       <div className="flex justify-center my-3">
         <a className="flex mx-4">
             <img src="./adress.svg" alt="email" />
-            <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">Abdulla qodiry ko’chasi,  12A uy</p>
+            <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">Toshkent shaxar, Shayxontoxur tuman, O'qchi ko'chasi, 7 uy 16 xonadon</p>
         </a>
-        <a href="mailto:elyorabdumalikov@gmail.com" className="flex mx-4">
+        <a href="mailto:atlasluxeuz@gmail.com" className="flex mx-4">
             <img src="./email.svg" alt="email" />
-            <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">elyorabdumalikov@gmail.com</p>
+            <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">atlasluxeuz@gmail.com</p>
         </a>
-        <a href="tel:+998900108510" className="flex mx-4">
+        <a href="tel:+998932550909" className="flex mx-4">
             <img src="./phone.svg" alt="email" />
-            <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">+998 90 010-85-10</p>
+            <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">+998 93 255-09-09</p>
         </a>
       </div>
     </div>

@@ -100,7 +100,7 @@ const Navbar = ({ modal }) => {
                 onClick={modalClick}
                 className="py-4 px-6 rounded-xl text-white button_gradient"
               >
-                Joy band qilish
+                {t("button")}
               </button>
             </li> */}
           </ul>

@@ -31,10 +31,18 @@ const Footer = () => {
           <h3 className="font-semibold mb-4 max-md:my-2">
             {t("navbar.menu3")}
           </h3>
-          <Link to={'/ichkiturizm'} className="font-normal mb-6 max-md:mb-2">{t("navbar.menu5")}</Link>
-          <Link to={'/tashqiturizm'} className="font-normal mb-6 max-md:mb-2">{t("navbar.menu7")}</Link>
-          <Link to={'/kiruvchiturizm'} className="font-normal mb-6 max-md:mb-2">{t("navbar.menu6")}</Link>
-          <Link to={'/mehmonxonalar'} className="font-normal mb-6 max-md:mb-2">{t("navbar.menu2")}</Link>
+          <Link to={"/ichkiturizm"} className="font-normal mb-6 max-md:mb-2">
+            {t("navbar.menu5")}
+          </Link>
+          <Link to={"/tashqiturizm"} className="font-normal mb-6 max-md:mb-2">
+            {t("navbar.menu7")}
+          </Link>
+          <Link to={"/kiruvchiturizm"} className="font-normal mb-6 max-md:mb-2">
+            {t("navbar.menu6")}
+          </Link>
+          <Link to={"/mehmonxonalar"} className="font-normal mb-6 max-md:mb-2">
+            {t("navbar.menu2")}
+          </Link>
         </div>
         <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
           <h3 className="font-semibold mb-4 max-md:my-2">
@@ -43,19 +51,20 @@ const Footer = () => {
           <a className="flex mb-6">
             <img className="mr-3" src="./adress.svg" alt="email" />
             <p className="text-[14px] text-[rgba(0,0,0,0.6)]">
-              Abdulla qodiry ko’chasi, 12A uy
+              Toshkent shaxar, Shayxontoxur tuman, O'qchi ko'chasi, 7 uy 16
+              xonadon
             </p>
           </a>
-          <a href="mailto:elyorabdumalikov@gmail.com" className="flex mb-6">
+          <a href="mailto:atlasluxeuz@gmail.com " className="flex mb-6">
             <img className="mr-3" src="./email.svg" alt="email" />
             <p className="text-[14px] text-[rgba(0,0,0,0.6)]">
-              elyorabdumalikov@gmail.com
+              atlasluxeuz@gmail.com
             </p>
           </a>
-          <a href="tel:+998900108510" className="flex mb-6">
+          <a href="tel:+998932550909" className="flex mb-6">
             <img className="mr-3" src="./phone.svg" alt="email" />
             <p className="text-[14px] text-[rgba(0,0,0,0.6)]">
-              +998 90 010-85-10
+              +998 93 255-09-09
             </p>
           </a>
           <div className="flex">

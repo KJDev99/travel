@@ -3,13 +3,47 @@ import { IoClose } from "react-icons/io5";
 import { InputMask } from "primereact/inputmask";
 
 const Modal = ({ modalAct }) => {
-  const [name, setName] = useState();
-  const [number, setNumber] = useState();
-  const [person, setPerson] = useState();
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [count, setCount] = useState("");
   const [scrollY, setScrollY] = useState(0);
+  const [message, setMessage] = useState("");
 
   function bron() {
-    location.reload();
+    const data = {
+      id: 4, // Bu ID kerak bo'lsa dinamik tarzda o'zgartirilishi mumkin
+      name,
+      phone,
+      count: parseInt(count),
+      created: new Date().toISOString(),
+    };
+
+    console.log("Yuborilayotgan ma'lumotlar:", data);
+
+    fetch("https://api.atlasluxe.uz/api/lead/create", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        console.log(response);
+        if (!response.ok) {
+          throw new Error("Tarmoq javobi yaxshi emas");
+        }
+        return response.json();
+      })
+      .then(() => {
+        setMessage("Muvaffaqiyatli jo'natildi!");
+        setTimeout(() => {
+          modalAct.setModal(false);
+        }, 2000); // Modalni yopishdan oldin 2 soniya kutish
+      })
+      .catch((error) => {
+        console.error("Xatolik:", error);
+        setMessage("Xatolik yuz berdi. Iltimos, qayta urinib ko'ring.");
+      });
   }
 
   useEffect(() => {
@@ -38,17 +72,22 @@ const Modal = ({ modalAct }) => {
         Bron qilish
       </h2>
 
+      {message && (
+        <div className="text-center text-green-500 mb-4">{message}</div>
+      )}
+
       <label
         htmlFor="fish"
         className="font-bold block ml-[60px] text-title-color mb-2"
       >
         FISH:
       </label>
-      <InputMask
+      <input
+        type="text"
         className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
         id="fish"
         value={name}
-        onChange={(e) => setName(e.target.name)}
+        onChange={(e) => setName(e.target.value)}
         mask="aaaaaaaaaaaaaaaa"
         placeholder="FISH"
       />
@@ -61,22 +100,22 @@ const Modal = ({ modalAct }) => {
       <InputMask
         className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
         id="phone"
-        value={number}
-        onChange={(e) => setNumber(e.target.number)}
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
         mask="+999 99 999 99 99"
         placeholder="+998 --- -- --"
       />
       <label
-        htmlFor="person"
+        htmlFor="count"
         className="font-bold block ml-[60px] text-title-color mb-2 "
       >
         Kishi soni
       </label>
       <InputMask
         className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
-        id="person"
-        value={person}
-        onChange={(e) => setPerson(e.target.person)}
+        id="count"
+        value={count}
+        onChange={(e) => setCount(e.target.value)}
         mask="99"
         placeholder="Kishi soni"
       />
