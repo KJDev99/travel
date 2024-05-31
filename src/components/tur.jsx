@@ -5,7 +5,7 @@ const Tur = () => {
   const [t, i18n] = useTranslation("global");
 
   const [tours, setTours] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -15,17 +15,17 @@ const Tur = () => {
           "https://admin.atlasluxe.uz/api/tur/list"
         );
         setTours(response.data);
-        setLoading(false);
+        // setLoading(false);
       } catch (error) {
         setError(error);
-        setLoading(false);
+        // setLoading(false);
       }
     };
 
     fetchTours();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  // if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
   return (
