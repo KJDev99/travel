@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-const Tur = () => {
+const Tur = ({ modal }) => {
   const [t, i18n] = useTranslation("global");
 
   const [tours, setTours] = useState([]);
@@ -28,6 +28,11 @@ const Tur = () => {
   // if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
+  function modalClick() {
+    // setActive(true);
+    modal.setModal(!modal.modal);
+  }
+
   return (
     <div className="container mx-auto">
       <h2 className="text-center text-[#14183E] text-[50px] font-bold mb-8 max-md:text-3xl">
@@ -46,15 +51,27 @@ const Tur = () => {
                 src={tour.photo_uz}
                 alt={tour.name_uz}
               />
-              <h3 className="mt-4 mb-3 mx-8 text-[#5E6282]">{tour[`name_${i18n.language}`]}</h3>
+              <h3 className="mt-4 mb-3 mx-8 text-[#5E6282]">
+                {tour[`name_${i18n.language}`]}
+              </h3>
               <div className="flex justify-between px-8">
                 <div className="flex">
                   <img src="./clock.svg" alt="clock icon" />
-                  <p className="ml-4 text-[#5E6282]">10 kun</p>
+                  <p className="ml-4 text-[#5E6282] lowercase">
+                    {tour.date} {t("kun")}
+                  </p>
                 </div>
                 <p className="text-[#5E6282]">
                   {tour.price.toLocaleString()} so’m
                 </p>
+              </div>
+              <div className="px-8">
+              <button
+                onClick={modalClick}
+                className="py-4  rounded-xl text-white button_gradient w-full  mt-5"
+              >
+                {t("button")}
+              </button>
               </div>
             </div>
           ))}

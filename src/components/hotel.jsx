@@ -1,17 +1,20 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import "../index.css";
-import { Pagination } from "swiper/modules";
 
 import { IoMdStar } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "../index.css";
+import { EffectFlip, Navigation, Pagination } from "swiper/modules";
+
 export default function Hotel() {
   const [t, i18n] = useTranslation("global");
-  const [hotelList, setHotelList] = useState([]);
+  const [hotelList, setHotelList,] = useState([]);
 
   useEffect(() => {
     const fetchHotelList = async () => {
@@ -55,16 +58,37 @@ export default function Hotel() {
         className="mySwiper container"
       >
         {hotelList.map(
-          (hotel) =>
+          (hotel, hotelIndex) =>
             hotel.is_exclusive && (
-              <SwiperSlide key={hotel.id} className="bg-white rounded-2xl">
-                <img
-                  className="rounded-lg"
-                  src={hotel.photo_uz}
-                  alt={hotel.name_uz}
-                />
-                <div className="flex justify-between mt-[10px] mb-2 px-[18px]">
-                  <span>{hotel[`address_${i18n.language}`]}</span>
+              <SwiperSlide key={hotel.id} className="bg-white rounded-2xl overflow-hidden">
+               <div>
+              <Swiper
+                effect={"flip"}
+                grabCursor={true}
+                pagination={true}
+                navigation={true}
+                modules={[EffectFlip, Navigation]}
+                className="mySwiper"
+              >
+                {hotel.photos.map((photo, photoIndex) => (
+                  <SwiperSlide
+                    className="h-[290px]"
+                    key={`${hotelIndex}-${photoIndex}`}
+                  >
+                    <img
+                      className="w-80% h-full object-cover"
+                      src={photo.photo}
+                      alt={`Hotel Image ${hotelIndex}-${photoIndex}`}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+                <h3 className="text-[#112B3C] text-[22px]  text-left px-[18px] font-semibold">
+                  {hotel[`name_${i18n.language}`]}
+                </h3>
+                <div className="flex justify-between mt-[10px] mb-4 px-[18px]">
+                  <span className="text-sm">{hotel[`address_${i18n.language}`]}</span>
                   <div className="flex ">
                     {[...Array(parseInt(hotel.star))].map((_, index) => (
                       <IoMdStar key={index} className="text-[#FFA90F]" />
@@ -77,9 +101,7 @@ export default function Hotel() {
                     ))}
                   </div>
                 </div>
-                <h3 className="text-[#112B3C] text-[18px] mb-8 text-left px-[18px]">
-                  {hotel[`name_${i18n.language}`]}
-                </h3>
+                
               </SwiperSlide>
             )
         )}

@@ -34,7 +34,7 @@ const Sayohat = () => {
         slidesPerView={1}
         spaceBetween={10}
         loop={true}
-        initialSlide={1}
+        initialSlide={2}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -44,26 +44,22 @@ const Sayohat = () => {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 50,
           },
         }}
         modules={[Autoplay]}
-        className="mySwiper container"
+        className="mySwiper container "
       >
         {sayohatLists.map((sayohat) => (
-          <SwiperSlide key={sayohat.id} className="bg-white rounded-2xl">
+          <SwiperSlide key={sayohat.id} className="bg-white rounded-2xl ">
             <img
-              className="rounded-lg"
+              className="rounded-lg h-[380px] object-cover"
               src={sayohat.photo_uz}
               alt={sayohat.name_uz}
             />
-            <h3 className="mt-4 mb-3 mx-8 text-center text-[#14183E] text-[30px] max-md:text-[24px] max-md:mt-3 max-md:mb-2">
+            <h3 className="mt-4 mb-3 mx-8 text-center text-[#14183E] text-[30px] max-md:text-[24px] max-md:mt-3 max-md:mb-2 line-clamp-1">
               {sayohat[`country_${i18n.language}`]}
             </h3>
           </SwiperSlide>

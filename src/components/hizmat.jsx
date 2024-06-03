@@ -14,52 +14,52 @@ const Hizmat = () => {
           </div>
           <Link
             to={"/xizmatlar"}
-            className="h-[274px] flex flex-col justify-center bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
+            className="h-[274px] flex flex-col bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
           >
-            <img src="./hizmat1.svg" alt="" />
-            <h3 className="text-xl text-[#1E1D4C]">Avia bilet</h3>
-            <p className="text-center text-[#5E6282]">
+            <img className="h-[100px] mt-4" src="./pilottt.svg" alt="" />
+            <h3 className="text-xl text-[#1E1D4C]  mt-5 mb-3">Avia bilet</h3>
+            <p className="text-center text-[#5E6282] text-[15px]">
               Engrossed listening. Park gate sell they west hard for the.
             </p>
           </Link>
           <Link
             to={"/xizmatlar"}
-            className="h-[274px] flex flex-col justify-center bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
+            className="h-[274px] flex flex-col bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
           >
-            <img src="./hizmat2.svg" alt="" />
+            <img className="h-[100px] mt-4" src="./hizmat2.svg" alt="" />
             <h3 className="text-xl text-[#1E1D4C] mt-5 mb-3">Viza</h3>
-            <p className="text-center text-[#5E6282]">
+            <p className="text-center text-[#5E6282] text-[15px]">
               Built Wicket longer admire do barton vanity itself do in it.
             </p>
           </Link>
           <Link
             to={"/xizmatlar"}
-            className="h-[274px] flex flex-col justify-center bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
+            className="h-[274px] flex flex-col bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
           >
-            <img src="./hizmat3.svg" alt="" />
+            <img className="h-[100px] mt-4" src="./hizmat3.svg" alt="" />
             <h3 className="text-xl text-[#1E1D4C] mt-5 mb-3">Poyezd bilet</h3>
-            <p className="text-center text-[#5E6282]">
+            <p className="text-center text-[#5E6282] text-[15px]">
               Built Wicket longer admire do barton vanity itself do in it.
             </p>
           </Link>
           <Link
             to={"/xizmatlar"}
-            className="h-[274px] flex flex-col justify-center bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
+            className="h-[274px] flex flex-col bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
           >
-            <img src="./hizmat4.svg" alt="" />
+            <img className="h-[100px] mt-4" src="./hizmat4.svg" alt="" />
             <h3 className="text-xl text-[#1E1D4C] mt-5 mb-3">Tarjimon</h3>
-            <p className="text-center text-[#5E6282]">
+            <p className="text-center text-[#5E6282] text-[15px]">
               Barton vanity itself do in it. Preferd to men it engrossed
-              listening.
+              .
             </p>
           </Link>
           <Link
             to={"/xizmatlar"}
-            className="h-[274px] flex flex-col justify-center bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
+            className="h-[274px] flex flex-col bg-[#F9f9f9] hover:bg-white items-center px-10 rounded-3xl max-md:h-[220px]"
           >
-            <img src="./carrr.png" alt="" />
+            <img className="h-[100px] mt-4" src="./carrr.png" alt="" />
             <h3 className="text-xl text-[#1E1D4C] mt-5 mb-3">Avtomobil</h3>
-            <p className="text-center text-[#5E6282]">
+            <p className="text-center text-[#5E6282] text-[15px]">
               We deliver outsourced aviation services for military customers
             </p>
           </Link>

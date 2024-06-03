@@ -87,7 +87,7 @@ export default function BasicTabs() {
           <div className="flex items-center mb-5">
             <img
               className="max-md:w-[90px] md:mr-10 max-md:mr-3"
-              src="./hizmat1.svg"
+              src="./pilottt.svg"
               alt=""
             />
             <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">

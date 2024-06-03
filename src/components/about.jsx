@@ -32,15 +32,15 @@ const About = () => {
       <h2 className="mb-10 text-[#14183E] text-[32px] font-bold mt-[70px] text-center">
         {t("about9")}
       </h2>
-      <div className="flex justify-around max-md:flex-col mb-16 max-md:items-center">
+      <div className="flex justify-center max-md:flex-col mb-16 max-md:items-center">
         <img
-          className="w-[290px] cursor-pointer max-md:mb-3"
+          className="w-[290px] md:mx-16 cursor-pointer max-md:mb-3"
           src="./11.webp"
           alt="sertifikat1"
           onClick={() => openModal("./11.webp")}
         />
         <img
-          className="w-[290px] cursor-pointer"
+          className="w-[290px] md:mx-16 cursor-pointer "
           src="./22.webp"
           alt="sertifikat2"
           onClick={() => openModal("./22.webp")}
@@ -49,7 +49,7 @@ const About = () => {
 
       {isOpen && (
         <div className="fixed inset-0 top-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative h-[600px] max-md:h-[490px] max-md:top-[0%] max-md:translate-y-[-25%]">
+          <div className="relative h-[90vh] max-md:h-[490px] max-md:top-[0%] max-md:translate-y-[-25%]">
             <button
               className="absolute top-[-40px] right-0 text-white text-3xl"
               onClick={closeModal}
@@ -59,7 +59,7 @@ const About = () => {
             <img
               src={currentImg}
               alt="Large view"
-              className="h-[600px] max-md:h-[490px]"
+              className="h-[90vh] max-md:h-[490px]"
             />
           </div>
         </div>

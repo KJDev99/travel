@@ -15,7 +15,7 @@ function Home() {
       <NavbarTop />
       <Navbar modal={{ modal, setModal }} />
       <Header modal={{ modal, setModal }} />
-      <Tur />
+      <Tur  modal={{ modal, setModal }}/>
       <Hizmat />
       <Hotel />
       <Sayohat />

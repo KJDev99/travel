@@ -36,11 +36,12 @@ const Header = ({ modal }) => {
     <div className="container mx-auto mt-[66px] mb-[120px] max-md:mt-8 max-md:mb-12">
       <Swiper
         spaceBetween={30}
+        loop={true}
         pagination={{
           clickable: true,
         }}
         autoplay={{
-          delay: 5000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination]}
@@ -51,7 +52,7 @@ const Header = ({ modal }) => {
             <img
               src={banner[`photo_${i18n.language}`]}
               alt={banner[`photo_${i18n.language}`]}
-              className="!w-full mx-auto h-[494px] object-cover rounded max-md:h-[280px]"
+              className="!w-full mx-auto h-[494px] object-cover rounded-xl max-md:h-max"
               onClick={() => modal.setModal(!modal.modal)}
             />
           </SwiperSlide>

@@ -1,12 +1,13 @@
 const NavbarTop = () => {
   return (
     <div className="container mx-auto max-md:hidden">
-      <div className="flex justify-center my-3">
+      <div className="flex justify-between my-3">
         <a className="flex mx-4">
             <img src="./adress.svg" alt="email" />
             <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">Toshkent shaxar, Shayxontoxur tuman, O'qchi ko'chasi, 7 uy 16 xonadon</p>
         </a>
-        <a href="mailto:atlasluxeuz@gmail.com" className="flex mx-4">
+       <div className="flex">
+       <a href="mailto:atlasluxeuz@gmail.com" className="flex mx-4">
             <img src="./email.svg" alt="email" />
             <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">atlasluxeuz@gmail.com</p>
         </a>
@@ -14,6 +15,7 @@ const NavbarTop = () => {
             <img src="./phone.svg" alt="email" />
             <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">+998 93 255-09-09</p>
         </a>
+       </div>
       </div>
     </div>
   );

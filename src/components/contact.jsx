@@ -18,28 +18,32 @@ const Contact = () => {
                 Dushanbadan-shanbagacha <br /> 09:00 dan 18:00 gacha
               </p>
               <p className="mb-1 text-black/[.80]">Telefon:</p>
-              <p className="text-[18px] font-medium mb-4">+998 71 230-12-91</p>
+              <a
+                href="tel:+998932550909"
+                className="text-[18px] font-medium mb-4"
+              >
+                +998 93 255-09-09
+              </a>
               <p className="mb-1 text-black/[.80]">E-mail:</p>
-              <p className="text-[18px] font-medium mb-4">
-                atlasluxe@gmail.uz,
-              </p>
+              <a
+                href="mailto:atlasluxe@gmail.uz"
+                className="text-[18px] font-medium mb-4"
+              >
+                atlasluxe@gmail.uz
+              </a>
             </div>
             <div className="w-1/2 max-md:w-full">
-              <p className="mb-1 text-black/[.80]">Transport:</p>
-              <p className="text-[18px] font-medium mb-4">
-                131-avtobus, 13-yo`nalishli taksi.
-              </p>
               <p className="mb-1 text-black/[.80]">Manzil:</p>
               <p className="text-[18px] font-medium mb-4">
-                Toshkent shahri, Kichik Xalqa Yo`li ko`chasi, G-9a mavzesi, 21-a
-                uy.
+                Toshkent shaxar, Shayxontoxur tuman, O'qchi ko'chasi, 7 uy 16
+                xonadon
               </p>
             </div>
           </div>
         </div>
         <div className="">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11988.366614334664!2d69.22815304999999!3d41.3068697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba862628adf%3A0x35cbda4b6948a351!2sKamolonOsh%20Drujba!5e0!3m2!1sru!2s!4v1716806764832!5m2!1sru!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4596348891864!2d69.23918880973592!3d41.32061758382117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b756b37ada9%3A0x2f32430f6f59195c!2z0YPQu9C40YbQsCDQpNGD0YDQutCw0YLQsCAy0LAsINCi0LDRiNC60LXQvdGCLCBUb3Noa2VudCBTaGFocmksINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1717348829260!5m2!1sru!2s"
             width="600"
             height="304"
             loading="lazy"

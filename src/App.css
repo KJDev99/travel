@@ -2,8 +2,9 @@ body {
   background: #f9f9f9;
   font-family: "Poppins";
 }
-h1,h2{
-  font-family: 'Volkhov';
+h1,
+h2 {
+  font-family: "Volkhov";
 }
 .button_gradient {
   background: linear-gradient(
@@ -15,7 +16,6 @@ h1,h2{
 
 .swiper {
   width: 100%;
-  /* height: 400px; */
 }
 
 .swiper-slide {
@@ -113,4 +113,20 @@ h1,h2{
   font-weight: 600;
   color: black;
   font-family: "Poppins";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0 !important;
+  transition: opacity 0.3s;
+}
+
+/* Show navigation buttons on hover */
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev {
+  opacity: 1 !important;
+}
+
+.ease-linear {
+  transition: top 0.3s linear; /* yoki 0.3s durationni o'zingizga mos ravishda o'zgartiring */
 }

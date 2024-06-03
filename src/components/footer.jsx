@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="w-1/4 max-md:w-full max-md:flex flex-col max-md:items-center">
           <img className="mb-4 max-md:w-[160px]" src="./Logo.svg" alt="Logo" />
           <div className="flex">
-            <img className="mr-8" src="./sertifikat1.png" alt="sertifikat1" />
-            <img src="./sertifikat2.png" alt="sertifikat2" />
+            <img className="mr-8 w-[110px]" src="./11.webp" alt="sertifikat1" />
+            <img className="w-[110px]" src="./22.webp" alt="sertifikat2" />
           </div>
         </div>
         <div className="w-1/4 max-md:w-full flex flex-col max-md:items-center">

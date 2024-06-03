@@ -18,8 +18,6 @@ const Modal = ({ modalAct }) => {
       created: new Date().toISOString(),
     };
 
-    console.log("Yuborilayotgan ma'lumotlar:", data);
-
     fetch("https://api.atlasluxe.uz/api/lead/create", {
       method: "POST",
       headers: {
@@ -54,78 +52,87 @@ const Modal = ({ modalAct }) => {
     window.addEventListener("scroll", handleScroll);
     handleScroll();
 
+    // Modal ochilganda scroll'ni o'chirish
+    document.body.style.overflow = "hidden";
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+
+      // Modal yopilganda scroll'ni qayta yoqish
+      document.body.style.overflow = "auto";
     };
   }, []);
 
+
   return (
-    <div
-      className={`bg-white w-[505px] max-sm:w-full absolute z-10 left-[50%] translate-x-[-50%] flex flex-col rounded-md`}
-      style={{ top: `${scrollY + 50}px` }}
-    >
-      <IoClose
-        onClick={() => modalAct.setModal(false)}
-        className="absolute text-4xl text-title-color top-5 right-5 "
-      />
-      <h2 className="text-[24px] text-center mt-[65px] mb-10 text-title-color font-Poppins">
-        Bron qilish
-      </h2>
+    <div className="h-full w-full bg-black/50 fixed left-0 top-0 flex items-center justify-center z-10">
+      <div
+        className={`bg-white w-[505px] max-sm:w-full absolute z-10 left-[50%] translate-x-[-50%] flex flex-col rounded-md`}
+        style={{ top: `${scrollY + 50}px` }}
+      >
+        <IoClose
+          onClick={() => modalAct.setModal(false)}
+          className="absolute text-4xl text-title-color top-5 right-5 "
+        />
+        <h2 className="text-[24px] text-center mt-[65px] mb-10 text-title-color font-Poppins">
+          Bron qilish
+        </h2>
 
-      {message && (
-        <div className="text-center text-green-500 mb-4">{message}</div>
-      )}
+        {message && (
+          <div className="text-center text-green-500 mb-4">{message}</div>
+        )}
 
-      <label
-        htmlFor="fish"
-        className="font-bold block ml-[60px] text-title-color mb-2"
-      >
-        FISH:
-      </label>
-      <input
-        type="text"
-        className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
-        id="fish"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        mask="aaaaaaaaaaaaaaaa"
-        placeholder="FISH"
-      />
-      <label
-        htmlFor="phone"
-        className="font-bold block ml-[60px] text-title-color mb-2"
-      >
-        Telefon raqam
-      </label>
-      <InputMask
-        className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
-        id="phone"
-        value={phone}
-        onChange={(e) => setPhone(e.target.value)}
-        mask="+999 99 999 99 99"
-        placeholder="+998 --- -- --"
-      />
-      <label
-        htmlFor="count"
-        className="font-bold block ml-[60px] text-title-color mb-2 "
-      >
-        Kishi soni
-      </label>
-      <InputMask
-        className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
-        id="count"
-        value={count}
-        onChange={(e) => setCount(e.target.value)}
-        mask="99"
-        placeholder="Kishi soni"
-      />
+        <label
+          htmlFor="fish"
+          className="font-bold block ml-[60px] text-title-color mb-2"
+        >
+          FISH:
+        </label>
+        <input
+          type="text"
+          className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
+          id="fish"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          mask="aaaaaaaaaaaaaaaa"
+          placeholder="FISH"
+        />
+        <label
+          htmlFor="phone"
+          className="font-bold block ml-[60px] text-title-color mb-2"
+        >
+          Telefon raqam
+        </label>
+        <InputMask
+          className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
+          id="phone"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          mask="+999 99 999 99 99"
+          placeholder="+998 --- -- --"
+        />
+        <label
+          htmlFor="count"
+          className="font-bold block ml-[60px] text-title-color mb-2 "
+        >
+          Kishi soni
+        </label>
+        <InputMask
+          className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
+          id="count"
+          value={count}
+          onChange={(e) => setCount(e.target.value)}
+          mask="99"
+          placeholder="Kishi soni"
+        />
 
-      <button
-        onClick={bron}
-        className="py-4 w-[384px] mx-auto rounded-xl text-white button_gradient mb-[66px]"
-      >
-        Jo’natish
-      </button>
+        <button
+          onClick={bron}
+          className="py-4 w-[384px] mx-auto rounded-xl text-white button_gradient mb-[66px]"
+        >
+          Jo’natish
+        </button>
+      </div>
     </div>
   );
 };
