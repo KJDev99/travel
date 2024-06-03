@@ -6,7 +6,6 @@ const Modal = ({ modalAct }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [count, setCount] = useState("");
-  const [scrollY, setScrollY] = useState(0);
   const [message, setMessage] = useState("");
 
   function bron() {
@@ -45,42 +44,33 @@ const Modal = ({ modalAct }) => {
   }
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-
-    // Modal ochilganda scroll'ni o'chirish
     document.body.style.overflow = "hidden";
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-
-      // Modal yopilganda scroll'ni qayta yoqish
       document.body.style.overflow = "auto";
     };
   }, []);
 
-
   return (
     <div className="h-full w-full bg-black/50 fixed left-0 top-0 flex items-center justify-center z-10">
       <div
-        className={`bg-white w-[505px] max-sm:w-full absolute z-10 left-[50%] translate-x-[-50%] flex flex-col rounded-md`}
-        style={{ top: `${scrollY + 50}px` }}
+        className={`text-center absolute top-10 w-[300px] bg-slate-700 text-white h-12 rounded flex items-center justify-center ease-linear ${
+          message ? "right-4" : "right-[-300px]"
+        }`}
       >
+        {message}
+      </div>
+      {/* {message && (
+        <div className="text-center absolute right-4 top-10 ">{message}</div>
+      )} */}
+      <div className="bg-white w-[505px] max-sm:w-full flex flex-col rounded-md absolute">
         <IoClose
           onClick={() => modalAct.setModal(false)}
-          className="absolute text-4xl text-title-color top-5 right-5 "
+          className="absolute text-4xl text-title-color top-5 right-5 cursor-pointer"
         />
         <h2 className="text-[24px] text-center mt-[65px] mb-10 text-title-color font-Poppins">
           Bron qilish
         </h2>
-
-        {message && (
-          <div className="text-center text-green-500 mb-4">{message}</div>
-        )}
 
         <label
           htmlFor="fish"

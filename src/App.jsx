@@ -9,6 +9,7 @@ import Ichkiturizm from "./pages/ichkiturizm";
 import Tashqiturizm from "./pages/tashqiturizm";
 import Kiruvchiturizm from "./pages/kiruvchiturizm";
 import ScrollToTop from "./components/ScrollToTop";
+import Umra from "./pages/umra-page";
 function App() {
   return (
     <div>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/kiruvchiturizm" element={<Kiruvchiturizm />} />
         <Route path="/ichkiturizm" element={<Ichkiturizm />} />
         <Route path="/tashqiturizm" element={<Tashqiturizm />} />
+        <Route path="/umra" element={<Umra />} />
         
 
         {/* <Route path="/contact" element={<Contact />} /> */}

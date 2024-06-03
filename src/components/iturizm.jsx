@@ -37,7 +37,7 @@ const Iturizm = ({ modal }) => {
               tur.type === "inner" && (
                 <div
                   key={tur.id}
-                  className="mb-6 flex max-md:mx-10 max-md:flex-col bg-white rounded-2xl overflow-hidden"
+                  className="mb-6 flex max-md:mx-2 max-md:flex-col bg-white rounded-2xl overflow-hidden"
                 >
                   <div className="w-1/4 max-md:w-full ">
                     <img
@@ -46,11 +46,11 @@ const Iturizm = ({ modal }) => {
                       alt={tur.name_uz}
                     />
                   </div>
-                  <div className="flex flex-col w-3/4 max-md:w-full md:ml-6 ">
+                  <div className="flex flex-col w-3/4 max-md:w-full md:ml-6 max-md:px-4">
                     <h3 className="text-2xl text-title-color mb-3 mt-4">
                       {tur[`name_${i18n.language}`]}
                     </h3>
-                    <div className="flex justify-between mr-8">
+                    <div className="flex justify-between md:mr-8">
                       <div className="flex mb-3">
                         <img
                           className="w-6 h-6 mr-2"
@@ -62,14 +62,18 @@ const Iturizm = ({ modal }) => {
                         </p>
                       </div>
                       <div className="flex items-center">
-                        <img className="h-6" src="./clock.svg" alt="clock icon" />
+                        <img
+                          className="h-6"
+                          src="./clock.svg"
+                          alt="clock icon"
+                        />
                         <p className="ml-4 text-[#5E6282] lowercase">
                           {tur.date}&nbsp;{t("kun")}
                         </p>
                       </div>
                     </div>
 
-                    <p className="text-black/80 grow text-justify mr-8 line-clamp-5 mb-8">
+                    <p className="text-black/80 grow text-justify md:mr-8 line-clamp-5 mb-8">
                       {tur[`desc_${i18n.language}`]}
                     </p>
                     <div className="flex justify-between">
@@ -79,13 +83,13 @@ const Iturizm = ({ modal }) => {
                           src="./money.svg"
                           alt="money"
                         />
-                        <p className="text-text-color text-xl font-medium">
+                        <p className="text-text-color text-xl font-medium max-md:text-sm">
                           {tur.price} so’m
                         </p>
                       </div>
                       <button
                         onClick={modalClick}
-                        className="py-4 px-6 rounded-xl text-white button_gradient w-[200px] mb-4 mr-8"
+                        className="py-4 px-6 rounded-xl text-white button_gradient w-[200px] mb-4 md:mr-8 max-md:px-3 max-md:py-2 max-md:w-[160px]"
                       >
                         {t("button")}
                       </button>

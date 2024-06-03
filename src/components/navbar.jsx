@@ -102,6 +102,9 @@ const Navbar = ({ modal }) => {
               <option className="bg-[#1A2031] text-sm" value="/kiruvchiturizm">
                 {t("navbar.menu6")}
               </option>
+              <option className="bg-[#1A2031] text-sm" value="/umra">
+                {t("umra")}
+              </option>
             </select>
             <Link
               to={getLinkWithLang("/xizmatlar")}

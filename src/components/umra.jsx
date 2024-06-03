@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-const Tturizm = ({ modal }) => {
+const Umra = ({ modal }) => {
   const [active, setActive] = useState(true);
 
   const [t, i18n] = useTranslation("global");
@@ -27,12 +27,12 @@ const Tturizm = ({ modal }) => {
   return (
     <div className="container mx-auto">
       <h2 className="mt-[58px] mb-4 text-[#14183E] text-[50px] font-bold text-center max-md:text-4xl">
-        Tashqi Turizm
+        Umra
       </h2>
       <div className="flex flex-col">
         {turList.map(
           (tur) =>
-            tur.type === "outer" && (
+            tur.type === "umra" && (
               <div
                 key={tur.id}
                 className="mb-6 flex max-md:mx-2 max-md:flex-col bg-white rounded-2xl overflow-hidden"
@@ -97,4 +97,4 @@ const Tturizm = ({ modal }) => {
   );
 };
 
-export default Tturizm;
+export default Umra;
