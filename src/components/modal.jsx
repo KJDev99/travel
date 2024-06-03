@@ -63,12 +63,12 @@ const Modal = ({ modalAct }) => {
       {/* {message && (
         <div className="text-center absolute right-4 top-10 ">{message}</div>
       )} */}
-      <div className="bg-white w-[505px] max-sm:w-full flex flex-col rounded-md absolute">
+      <div className="bg-white w-[505px] max-md:w-[90%] flex flex-col rounded-md absolute">
         <IoClose
           onClick={() => modalAct.setModal(false)}
-          className="absolute text-4xl text-title-color top-5 right-5 cursor-pointer"
+          className="absolute text-4xl text-title-color top-5 right-5 cursor-pointer max-md:top-2 max-md:right-2"
         />
-        <h2 className="text-[24px] text-center mt-[65px] mb-10 text-title-color font-Poppins">
+        <h2 className="text-[24px] text-center mt-[65px] mb-10 text-title-color font-Poppins max-md:mt-8 max-md:mb-4">
           Bron qilish
         </h2>
 
@@ -80,7 +80,7 @@ const Modal = ({ modalAct }) => {
         </label>
         <input
           type="text"
-          className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
+          className="w-[384px] max-md:w-[320px] max-md:h-12 h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
           id="fish"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -94,7 +94,7 @@ const Modal = ({ modalAct }) => {
           Telefon raqam
         </label>
         <InputMask
-          className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
+          className="w-[384px] max-md:w-[320px] max-md:h-12 h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
           id="phone"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
@@ -108,7 +108,7 @@ const Modal = ({ modalAct }) => {
           Kishi soni
         </label>
         <InputMask
-          className="w-[384px] h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
+          className="w-[384px] max-md:w-[320px] max-md:h-12 h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
           id="count"
           value={count}
           onChange={(e) => setCount(e.target.value)}
@@ -118,7 +118,7 @@ const Modal = ({ modalAct }) => {
 
         <button
           onClick={bron}
-          className="py-4 w-[384px] mx-auto rounded-xl text-white button_gradient mb-[66px]"
+          className="py-4 w-[384px] max-md:w-[320px] max-md:h-12 mx-auto rounded-xl text-white button_gradient mb-[66px] max-md:mb-[40px]"
         >
           Jo’natish
         </button>
