@@ -49,7 +49,7 @@ const About = () => {
 
       {isOpen && (
         <div className="fixed inset-0 top-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="relative h-[90vh] max-md:h-[490px] max-md:top-[0%] max-md:translate-y-[-25%]">
+          <div className="relative h-[90vh] max-md:h-[490px] max-md:top-[0%]">
             <button
               className="absolute top-[-40px] right-0 text-white text-3xl"
               onClick={closeModal}
