@@ -24,8 +24,6 @@ export default function Hotel() {
           "https://admin.atlasluxe.uz/api/hotel/list"
         );
         setHotelList(response.data);
-        console.log(hotelList[0].photos[0].photo);
-        console.log(hotelList);
       } catch (error) {
         console.error("Error fetching hotel list:", error);
       }

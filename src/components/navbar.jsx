@@ -130,15 +130,12 @@ const Navbar = ({ modal }) => {
               >
                 <option className="bg-[#1A2031] flex " value={"uz"}>
                   Uz
-                  <img className="h-6 w-6" src="./uz.png" alt="Uz" />
                 </option>
                 <option className="bg-[#1A2031]" value={"en"}>
                   En
-                  <img className="h-6 w-6" src="./en.png" alt="en" />
                 </option>
                 <option className="bg-[#1A2031]" value={"ru"}>
                   Ru
-                  <img className="h-6 w-6" src="./ru.png" alt="ru" />
                 </option>
               </select>
             </li>

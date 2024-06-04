@@ -52,7 +52,8 @@ const Header = ({ modal }) => {
             <img
               src={banner[`photo_${i18n.language}`]}
               alt={banner[`photo_${i18n.language}`]}
-              className="!w-full mx-auto h-[494px] object-cover rounded-xl max-md:h-max"
+              className="!w-full mx-auto object-cover rounded-xl"
+              style={{ height: window.innerWidth <= 768 ? 'auto' : '494px' }}
               onClick={() => modal.setModal(!modal.modal)}
             />
           </SwiperSlide>
