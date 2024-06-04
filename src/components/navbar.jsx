@@ -93,14 +93,14 @@ const Navbar = ({ modal }) => {
               <option disabled value="">
                 {t("navbar.menu10")}
               </option>
-              <option value="/ichkiturizm" className="bg-[#1A2031] text-sm">
-                {t("navbar.menu5")}
+              <option className="bg-[#1A2031] text-sm" value="/kiruvchiturizm">
+                {t("navbar.menu6")}
               </option>
               <option className="bg-[#1A2031] text-sm" value="/tashqiturizm">
                 {t("navbar.menu7")}
               </option>
-              <option className="bg-[#1A2031] text-sm" value="/kiruvchiturizm">
-                {t("navbar.menu6")}
+              <option value="/ichkiturizm" className="bg-[#1A2031] text-sm">
+                {t("navbar.menu5")}
               </option>
               <option className="bg-[#1A2031] text-sm" value="/umra">
                 {t("umra")}

@@ -28,7 +28,7 @@ const Iturizm = ({ modal }) => {
   return (
     <div className="container mx-auto">
       <h2 className="mt-[58px] mb-4 text-[#14183E] text-[50px] font-bold text-center max-md:text-4xl">
-        Ichki Turizm
+        {t("navbar.menu5")}
       </h2>
       <div className="flex flex-col">
         <div className="flex flex-col">
@@ -84,7 +84,7 @@ const Iturizm = ({ modal }) => {
                           alt="money"
                         />
                         <p className="text-text-color text-xl font-medium max-md:text-sm">
-                          {tur.price} so’m
+                          {tur.price}
                         </p>
                       </div>
                       <button

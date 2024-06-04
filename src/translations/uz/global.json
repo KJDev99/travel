@@ -1,18 +1,19 @@
 {
   "navbar": {
+    "menu0": "Bosh sahifa",
     "menu1": "Biz haqimizda",
-    "menu2": "Mehmonhonalar",
+    "menu2": "Mexmonhonalar",
     "menu3": "Turizm turlari",
     "menu5": "Ichki turizm",
-    "menu6": "Kiruvchi turizm",
-    "menu7": "Tashqi turizm",
+    "menu6": "Kirish turizmi",
+    "menu7": "Chiqish turizmi",
     "menu8": "Xizmatlar",
     "menu9": "Bog'lanish",
     "menu10": "Turizm turlari"
   },
   "tur": "Qaynoq turlar",
   "hizmat": "Biz eng yaxshi hizmatlarni taklif qilamiz",
-  "mehmonxona": "Ekskluziv mehmonxonalar",
+  "mehmonxona": "Eksklyuziv mehmonxonalar",
   "sayohat": "Sayohat uchun tanlovlar",
   "about1": "O'zbekiston fuqarolari uchun viza xizmatlari",
   "about2": "Mamlakatlar o'rtasidagi viza rejimi xalqaro munosabatlar va sayohatlarning muhim jihati hisoblanadi. O‘zbekiston fuqarolari uchun ham, boshqa davlat fuqarolari uchun ham xorijiy davlatlarga borish uchun viza olishning ma’lum talablari va tartiblari mavjud.",
@@ -25,5 +26,6 @@
   "about9": "Bizning sertifikatlarimiz",
   "button": "Joy band qilish",
   "kun": "Kunlik",
-  "umra": "Umra"
+  "umra": "Umra",
+  "manzil": "Toshkent shaxar, Shayxontoxur tuman, O'qchi ko'chasi, 7 uy 16 xonadon"
 }

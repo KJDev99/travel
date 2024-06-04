@@ -71,7 +71,7 @@ export default function Hotel() {
                     src={hotel.photos[0]["photo"]}
                     alt="Hotel Image"
                   />
-                  <h3 className="text-[#112B3C] text-[22px]  text-left px-[18px] font-semibold">
+                  <h3 className="text-[#112B3C] text-[22px]  text-left px-[18px] font-semibold h-16">
                     {hotel[`name_${i18n.language}`]}
                   </h3>
                   <div className="flex justify-between mt-[10px] mb-4 px-[18px]">

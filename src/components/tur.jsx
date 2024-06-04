@@ -62,7 +62,7 @@ const Tur = ({ modal }) => {
                   </p>
                 </div>
                 <p className="text-[#5E6282]">
-                  {tour.price.toLocaleString()} so’m
+                  {tour.price.toLocaleString()}
                 </p>
               </div>
               <div className="px-8">

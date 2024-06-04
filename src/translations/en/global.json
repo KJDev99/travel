@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "menu0": "Home",
     "menu1": "About Us",
     "menu2": "Hotels",
     "menu3": "Types of tourism",
@@ -25,5 +26,6 @@
   "about9": "Our Certificates",
   "button": "Reservation",
   "kun": "daily",
-  "umra": "umrah"
+  "umra": "umrah",
+  "manzil": "Tashkent city, Shaikhontokhur district, Okhchi street, 7 house 16 the apartment"
 }

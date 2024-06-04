@@ -78,7 +78,7 @@ const Umra = ({ modal }) => {
                         alt="money"
                       />
                       <p className="text-text-color text-xl font-medium max-md:text-sm">
-                        {tur.price} so’m
+                        {tur.price}
                       </p>
                     </div>
                     <button

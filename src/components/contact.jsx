@@ -1,9 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const [t] = useTranslation("global");
   return (
     <div className="container mx-auto">
-      <h2 className="text-center text-[#14183E] text-[50px] font-bold mb-8 mt-[60px] max-md:text-3xl max-md:mt-10 max-md:mb-16">
+      <h2 className="text-center text-[#14183E] text-[50px] font-Poppins font-bold mb-8 mt-[60px] max-md:text-3xl max-md:mt-10 max-md:mb-16">
         Bog’lanish
       </h2>
       <div className="grid grid-cols-2 max-md:grid-cols-1 gap-[40px] max-md:gap-[30px] mb-[100px]">
@@ -26,18 +28,15 @@ const Contact = () => {
               </a>
               <p className="mb-1 text-black/[.80]">E-mail:</p>
               <a
-                href="mailto:atlasluxe@gmail.uz"
+                href="mailto:atlasluxeuz@gmail.com"
                 className="text-[18px] font-medium mb-4"
               >
-                atlasluxe@gmail.uz
+                atlasluxeuz@gmail.com
               </a>
             </div>
             <div className="w-1/2 max-md:w-full">
               <p className="mb-1 text-black/[.80]">Manzil:</p>
-              <p className="text-[18px] font-medium mb-4">
-                Toshkent shaxar, Shayxontoxur tuman, O'qchi ko'chasi, 7 uy 16
-                xonadon
-              </p>
+              <p className="text-[18px] font-medium mb-4">{t("manzil")}</p>
             </div>
           </div>
         </div>

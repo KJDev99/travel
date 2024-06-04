@@ -18,7 +18,7 @@ const Footer = () => {
             {t("navbar.menu1")}
           </h3>
           <Link to={"/"} className="font-normal mb-6 max-md:mb-2">
-            Home
+            {t("navbar.menu0")}
           </Link>
           <Link to={"/about"} className="font-normal mb-6 max-md:mb-2">
             {t("navbar.menu1")}
@@ -50,10 +50,7 @@ const Footer = () => {
           </h3>
           <a className="flex mb-6">
             <img className="mr-3" src="./adress.svg" alt="email" />
-            <p className="text-[14px] text-[rgba(0,0,0,0.6)]">
-              Toshkent shaxar, Shayxontoxur tuman, O'qchi ko'chasi, 7 uy 16
-              xonadon
-            </p>
+            <p className="text-[14px] text-[rgba(0,0,0,0.6)]">{t("manzil")}</p>
           </a>
           <a href="mailto:atlasluxeuz@gmail.com " className="flex mb-6">
             <img className="mr-3" src="./email.svg" alt="email" />
