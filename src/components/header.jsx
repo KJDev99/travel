@@ -25,6 +25,7 @@ const Header = ({ modal }) => {
           "https://admin.atlasluxe.uz/api/banner/list"
         );
         setBannerLists(response.data);
+        console.log(bannerLists);
       } catch (error) {
         console.log(error);
       }
@@ -50,8 +51,8 @@ const Header = ({ modal }) => {
         {bannerLists.map((banner) => (
           <SwiperSlide key={banner.id} className="bg-transparent relative">
             <img
-              src={banner[`photo_${i18n.language}`]}
-              alt={banner[`photo_${i18n.language}`]}
+              src={banner.photo}
+              alt={banner.photo}
               className="!w-full mx-auto object-cover rounded-xl"
               style={{ height: window.innerWidth <= 768 ? "auto" : "494px" }}
               onClick={() => modal.setModal(!modal.modal)}
