@@ -1,17 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
-
 import axios from "axios";
 import { useState, useEffect } from "react";
-
 import { useTranslation } from "react-i18next";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../index.css";
-
-// import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 
 const Header = ({ modal }) => {
@@ -25,12 +21,17 @@ const Header = ({ modal }) => {
           "https://admin.atlasluxe.uz/api/banner/list"
         );
         setBannerLists(response.data);
-        console.log(bannerLists);
       } catch (error) {
         console.log(error);
       }
     };
     fetchBanners();
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
   }, []);
 
   return (
@@ -57,11 +58,16 @@ const Header = ({ modal }) => {
               style={{ height: window.innerWidth <= 768 ? "auto" : "494px" }}
               onClick={() => modal.setModal(!modal.modal)}
             />
-            <h1 className="text-6xl font-Poppins px-20 w-2/3 max-md:w-full max-md:px-5 max-md:text-2xl absolute z-50 top-[30%] left-0 text-left uppercase font-semibold text-white translate-y-[-50%]">
+            <h1
+              data-aos="fade-down"
+              className="text-6xl font-Poppins px-20 w-2/3 max-md:w-full max-md:px-5 max-md:text-2xl absolute z-50 top-[30%] left-0 text-left uppercase font-semibold text-white translate-y-[-50%]"
+            >
               {banner[`title_${i18n.language}`]}
               {/* BU Yerda text bo'ladi taxminan 2 qator */}
             </h1>
             <button
+              data-aos="fade-down"
+              data-aos-delay="500"
               onClick={() => modal.setModal(!modal.modal)}
               className="py-4  rounded-xl text-white button_gradient px-10 mx-20 max-md:mx-5 mt-5 absolute bottom-10 max-md:bottom-4 max-md:px-5 max-md:py-2 max-md:text-sm max-md:rounded-lg left-0"
             >
