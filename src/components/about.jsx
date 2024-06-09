@@ -21,14 +21,14 @@ const About = () => {
       <h2 className="mt-[58px] mb-4 text-[#14183E] text-[50px] font-bold text-center max-md:text-4xl">
         {t("navbar.menu1")}
       </h2>
-      <p className="font-medium mb-4">{t("about1")}</p>
-      <p className="font-medium mb-4">{t("about2")}</p>
-      <p className="font-medium mb-4">{t("about3")}</p>
-      <p className="font-medium mb-4">{t("about4")}</p>
-      <p className="font-medium mb-4">{t("about5")}</p>
-      <p className="font-medium mb-4">{t("about6")}</p>
-      <p className="font-medium mb-4">{t("about7")}</p>
-      <p className="font-medium mb-4">{t("about8")}</p>
+      <p className="font-medium mb-4 md:text-lg">{t("about1")}</p>
+      <p className="font-medium mb-4 md:text-lg">{t("about2")}</p>
+      <p className="font-medium mb-4 md:text-lg">{t("about3")}</p>
+      <p className="font-medium mb-4 md:text-lg">{t("about4")}</p>
+      <p className="font-medium mb-4 md:text-lg">{t("about5")}</p>
+      <p className="font-medium mb-4 md:text-lg">{t("about6")}</p>
+      <p className="font-medium mb-4 md:text-lg">{t("about7")}</p>
+      <p className="font-medium mb-4 md:text-lg">{t("about8")}</p>
       <h2 className="mb-10 text-[#14183E] text-[32px] font-bold mt-[70px] text-center">
         {t("about9")}
       </h2>

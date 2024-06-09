@@ -102,7 +102,7 @@ const Navbar = ({ modal }) => {
               <option value="/ichkiturizm" className="bg-[#1A2031] text-sm">
                 {t("navbar.menu5")}
               </option>
-              <option className="bg-[#1A2031] text-sm" value="/umra">
+              <option className="bg-[#1A2031] text-sm capitalize" value="/umra">
                 {t("umra")}
               </option>
             </select>

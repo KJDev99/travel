@@ -4,6 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { useTranslation } from "react-i18next";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,7 +45,7 @@ export default function BasicTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  const [t] = useTranslation("global");
   return (
     <Box className="container mx-auto mb-20" sx={{ width: "100%" }}>
       <Box
@@ -59,25 +60,29 @@ export default function BasicTabs() {
           aria-label="basic tabs example"
           className="flex flex-col justify-center mx-auto w-max bg-tabs-bg mt-[45px] rounded-xl font-medium "
         >
-          <Tab className="font-medium text-sm" label="Viza" {...a11yProps(0)} />
           <Tab
             className="font-medium text-sm"
-            label="Avia bilet"
+            label={`${t("viza0")}`}
+            {...a11yProps(0)}
+          />
+          <Tab
+            className="font-medium text-sm"
+            label={`${t("avia0")}`}
             {...a11yProps(1)}
           />
           <Tab
             className="font-medium text-sm"
-            label="Poyezd bilet"
+            label={`${t("poyezd0")}`}
             {...a11yProps(2)}
           />
           <Tab
             className="font-medium text-sm"
-            label="Avtomobil"
+            label={`${t("avtomobil0")}`}
             {...a11yProps(3)}
           />
           <Tab
             className="font-medium text-sm"
-            label="Tarjimon"
+            label={`${t("tarjimon0")}`}
             {...a11yProps(4)}
           />
         </Tabs>
@@ -90,35 +95,13 @@ export default function BasicTabs() {
               src="./pilottt.svg"
               alt=""
             />
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
-              Vizalarni olib berish
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+              {t("viza0")}
             </h2>
           </div>
-          <p className="text-black/80 font-medium max-md:text-sm text-justify">
-            O'zbekiston fuqarolari uchun viza xizmatlari Mamlakatlar o'rtasidagi
-            viza rejimi xalqaro munosabatlar va sayohatlarning muhim jihati
-            hisoblanadi. O‘zbekiston fuqarolari uchun ham, boshqa davlat
-            fuqarolari uchun ham xorijiy davlatlarga borish uchun viza olishning
-            ma’lum talablari va tartiblari mavjud. Viza olish tartibi
-            O‘zbekiston fuqarolari viza olish uchun muayyan tartib-qoidalarga
-            rioya qilishlari kerak. Bunga ariza topshirish, pasport va
-            fotosuratlar kabi kerakli hujjatlarni taqdim etish va viza toʻlovini
-            toʻlash kiradi. Ba'zi hollarda siz sayohat qilishni
-            rejalashtirayotgan mamlakatning konsulligi yoki elchixonasida
-            shaxsiy suhbat talab qilinishi mumkin. Elektron vizalar (eVisa) Viza
-            jarayonini soddalashtirish uchun ko'plab mamlakatlar elektron viza
-            (eVisa) xizmatini taklif qiladi. Bu O‘zbekiston fuqarolariga onlayn
-            tarzda viza olish va uni elektron shaklda olish imkonini beradi³.
-            eVisa uchun ariza berish va olish jarayoni odatda standart viza
-            tartibiga qaraganda tezroq va qulayroqdir. O‘zbekiston fuqarolari
-            uchun viza xizmatlari boradigan davlatga qarab turli tartib o‘z
-            ichiga oladi. Barcha kerakli hujjatlar o'z vaqtida va to'g'ri
-            bajarilishini ta'minlash uchun viza qoidalari va talablari bilan
-            oldindan tanishib chiqish muhimdir. Elektron vizalar O‘zbekiston
-            fuqarolari uchun xalqaro sayohatlarni yanada qulayroq qilib, kirish
-            ruxsatnomasini olishning qulay va tezkor usulini taklif etadi. ATLAS
-            LUXE kompaniyasi viza xizmatlarini taqdim etadi; agar sizga malakali
-            yordam kerak bo'lsa, bizning operatorlarimizga murojaat qiling.
+          <p className="text-black/80 font-medium text-lg max-md:text-sm text-justify">
+            <p className="font-medium mb-4">{t("viza1")}</p>
+            <p className="font-medium mb-4">{t("viza2")}</p>
           </p>
         </div>
       </CustomTabPanel>
@@ -130,20 +113,13 @@ export default function BasicTabs() {
               src="./hizmat2.svg"
               alt=""
             />
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
-              Avia bilet
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+              {t("avia0")}
             </h2>
           </div>
-          <p className="text-black/80 font-medium max-md:text-sm text-justify">
-            O‘zbekiston fuqarolari uchun viza xizmatlari boradigan davlatga
-            qarab turli tartib  o‘z ichiga oladi. Barcha kerakli
-            hujjatlar o'z vaqtida va to'g'ri bajarilishini ta'minlash uchun viza
-            qoidalari va talablari bilan oldindan tanishib chiqish muhimdir.
-            Elektron vizalar O‘zbekiston fuqarolari uchun xalqaro sayohatlarni
-            yanada qulayroq qilib, kirish ruxsatnomasini olishning qulay va
-            tezkor usulini taklif etadi. ATLAS LUXE kompaniyasi viza
-            xizmatlarini taqdim etadi; agar sizga malakali yordam kerak bo'lsa,
-            bizning operatorlarimizga murojaat qiling.
+          <p className="text-black/80 font-medium text-lg max-md:text-sm text-justify">
+            <p className="font-medium mb-4">{t("avia1")}</p>
+            <p className="font-medium mb-4">{t("avia2")}</p>
           </p>
         </div>
       </CustomTabPanel>
@@ -155,35 +131,13 @@ export default function BasicTabs() {
               src="./hizmat3.svg"
               alt=""
             />
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
-              Poyezd bilet
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+              {t("poyezd0")}
             </h2>
           </div>
-          <p className="text-black/80 font-medium max-md:text-sm text-justify">
-            O'zbekiston fuqarolari uchun viza xizmatlari Mamlakatlar o'rtasidagi
-            viza rejimi xalqaro munosabatlar va sayohatlarning muhim jihati
-            hisoblanadi. O‘zbekiston fuqarolari uchun ham, boshqa davlat
-            fuqarolari uchun ham xorijiy davlatlarga borish uchun viza olishning
-            ma’lum talablari va tartiblari mavjud. Viza olish tartibi
-            O‘zbekiston fuqarolari viza olish uchun muayyan tartib-qoidalarga
-            rioya qilishlari kerak. Bunga ariza topshirish, pasport va
-            fotosuratlar kabi kerakli hujjatlarni taqdim etish va viza toʻlovini
-            toʻlash kiradi. Ba'zi hollarda siz sayohat qilishni
-            rejalashtirayotgan mamlakatning konsulligi yoki elchixonasida
-            shaxsiy suhbat talab qilinishi mumkin. Elektron vizalar (eVisa) Viza
-            jarayonini soddalashtirish uchun ko'plab mamlakatlar elektron viza
-            (eVisa) xizmatini taklif qiladi. Bu O‘zbekiston fuqarolariga onlayn
-            tarzda viza olish va uni elektron shaklda olish imkonini beradi³.
-            eVisa uchun ariza berish va olish jarayoni odatda standart viza
-            tartibiga qaraganda tezroq va qulayroqdir. O‘zbekiston fuqarolari
-            uchun viza xizmatlari boradigan davlatga qarab turli tartib o‘z
-            ichiga oladi. Barcha kerakli hujjatlar o'z vaqtida va to'g'ri
-            bajarilishini ta'minlash uchun viza qoidalari va talablari bilan
-            oldindan tanishib chiqish muhimdir. Elektron vizalar O‘zbekiston
-            fuqarolari uchun xalqaro sayohatlarni yanada qulayroq qilib, kirish
-            ruxsatnomasini olishning qulay va tezkor usulini taklif etadi. ATLAS
-            LUXE kompaniyasi viza xizmatlarini taqdim etadi; agar sizga malakali
-            yordam kerak bo'lsa, bizning operatorlarimizga murojaat qiling.
+          <p className="text-black/80 font-medium text-lg max-md:text-sm text-justify">
+            <p className="font-medium mb-4">{t("poyezd1")}</p>
+            <p className="font-medium mb-4">{t("poyezd2")}</p>
           </p>
         </div>
       </CustomTabPanel>
@@ -196,22 +150,20 @@ export default function BasicTabs() {
               alt=""
             />
 
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
-              Avtomobil
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+              {t("avtomobil0")}
             </h2>
           </div>
-          <p className="text-black/80 font-medium max-md:text-sm text-justify">
-            O'zbekiston fuqarolari uchun viza xizmatlari Mamlakatlar o'rtasidagi
-            viza rejimi xalqaro munosabatlar va sayohatlarning muhim jihati
-            hisoblanadi. O‘zbekiston fuqarolari uchun ham, boshqa davlat
-            fuqarolari uchun ham xorijiy davlatlarga borish uchun viza olishning
-            ma’lum talablari va tartiblari mavjud. Viza olish tartibi
-            O‘zbekiston fuqarolari viza olish uchun muayyan tartib-qoidalarga
-            rioya qilishlari kerak. Bunga ariza topshirish, pasport va
-            fotosuratlar kabi kerakli hujjatlarni taqdim etish va viza toʻlovini
-            toʻlash kiradi. Ba'zi hollarda siz sayohat qilishni
-            rejalashtirayotgan mamlakatning konsulligi yoki elchixonasida
-            shaxsiy suhbat talab qilinishi mumkin.
+          <p className="text-black/80 font-medium text-lg max-md:text-sm text-justify">
+            <p className="font-medium mb-4">{t("avtomobil1")}</p>
+            <p className="font-medium mb-4">{t("avtomobil2")}</p>
+            <p className="font-medium mb-4">{t("avtomobil3")}</p>
+            <p className="font-medium mb-4">{t("avtomobil4")}</p>
+            <p className="font-medium mb-4">{t("avtomobil5")}</p>
+            <p className="font-medium mb-4">{t("avtomobil6")}</p>
+            <p className="font-medium mb-4">{t("avtomobil7")}</p>
+            <p className="font-medium mb-4">{t("avtomobil8")}</p>
+            <p className="font-medium mb-4">{t("avtomobil9")}</p>
           </p>
         </div>
       </CustomTabPanel>
@@ -223,20 +175,12 @@ export default function BasicTabs() {
               src="./hizmat4.svg"
               alt=""
             />
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center max-md:text-[26px]">
-              Tarjimon
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+              {t("tarjimon0")}
             </h2>
           </div>
-          <p className="text-black/80 font-medium max-md:text-sm text-justify">
-            O‘zbekiston fuqarolari uchun viza xizmatlari boradigan davlatga
-            qarab turli tartib  o‘z ichiga oladi. Barcha kerakli
-            hujjatlar o'z vaqtida va to'g'ri bajarilishini ta'minlash uchun viza
-            qoidalari va talablari bilan oldindan tanishib chiqish muhimdir.
-            Elektron vizalar O‘zbekiston fuqarolari uchun xalqaro sayohatlarni
-            yanada qulayroq qilib, kirish ruxsatnomasini olishning qulay va
-            tezkor usulini taklif etadi. ATLAS LUXE kompaniyasi viza
-            xizmatlarini taqdim etadi; agar sizga malakali yordam kerak bo'lsa,
-            bizning operatorlarimizga murojaat qiling.
+          <p className="text-black/80 font-medium text-lg max-md:text-sm text-justify">
+            <p className="font-medium mb-4">{t("tarjimon1")}</p>
           </p>
         </div>
       </CustomTabPanel>
