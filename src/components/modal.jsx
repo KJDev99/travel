@@ -107,12 +107,13 @@ const Modal = ({ modalAct }) => {
         >
           Kishi soni
         </label>
-        <InputMask
+        <input
           className="w-[384px] max-md:w-[320px] max-md:h-12 h-[56px] px-4 bg-[rgb(241,241,241)] rounded mx-auto mb-6 text-title-color outline-none"
           id="count"
           value={count}
           onChange={(e) => setCount(e.target.value)}
           mask="99"
+          maxLength={2}
           placeholder="Kishi soni"
         />
 

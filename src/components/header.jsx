@@ -58,13 +58,18 @@ const Header = ({ modal }) => {
               style={{ height: window.innerWidth <= 768 ? "auto" : "494px" }}
               onClick={() => modal.setModal(!modal.modal)}
             />
-            <h1
+            <div
               data-aos="fade-down"
-              className="text-6xl font-Poppins px-20 w-2/3 max-md:w-full max-md:px-5 max-md:text-2xl absolute z-50 top-[30%] left-0 text-left uppercase font-semibold text-white translate-y-[-50%]"
+              className=" px-20 w-2/3 max-md:w-full max-md:px-5 absolute z-50 top-[20%] left-0 text-left translate-y-[-50%]"
             >
-              {banner[`title_${i18n.language}`]}
-              {/* BU Yerda text bo'ladi taxminan 2 qator */}
-            </h1>
+              <h1 className="text-6xl font-Poppins max-md:text-2xl  uppercase font-semibold text-white ">
+                {banner[`title_${i18n.language}`]}
+                {/* BU Yerda text bo'ladi taxminan 2 qator */}
+              </h1>
+              <p className="text-2xl font-Poppins max-md:text-sm  uppercase font-semibold text-white">
+                {banner[`text_${i18n.language}`]}
+              </p>
+            </div>
             <button
               data-aos="fade-down"
               data-aos-delay="500"

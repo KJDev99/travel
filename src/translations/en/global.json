@@ -11,7 +11,7 @@
     "menu9": "Contact",
     "menu10": "Types of tourism"
   },
-  "tur": "Hot types",
+  "tur": "Hot tours",
   "hizmat": "We offer the best services",
   "mehmonxona": "Exclusive hotels",
   "sayohat": "Travel Choices",
@@ -57,5 +57,10 @@
   "chturizm1": "We help to organize all the necessary conditions for our compatriots and other clients who want to visit any country of the world for business, travel, medicine and education.",
   "chturizm2": "Including visa assistance, translator and guide services, 3, 4 and 5 star hotels depending on the requirements, all types of transport, including air, railway, bus and car rental. we will be",
   "umra1": "We will be a close assistant for all Muslims from our country and from other countries to perform great pilgrimages and prayers to the blessed cities of Madinah and Mecca in Saudi Arabia, and we will be helpful in organizing comfortable conditions there.",
-  "umra2": "We offer our customers three types of services: economy, comfort and premium rates. At the same time, we provide three-, four- and five-star hotels, all types of transportation, including air, railway, bus and passenger cars, depending on the tariffs, and of course, fifty heads, medical attendants. will be at your service."
+  "umra2": "We offer our customers three types of services: economy, comfort and premium rates. At the same time, we provide three-, four- and five-star hotels, all types of transportation, including air, railway, bus and passenger cars, depending on the tariffs, and of course, fifty heads, medical attendants. will be at your service.",
+  "vizamain": "ATLAS LUXE company also provides visa services.",
+  "aviamain": "ATLAS LUXE company provides air ticket booking services.",
+  "poyezdmain": "ATLAS LUXE provides train ticket services for your trip.",
+  "tarjimonmain": "ATLAS LUXE company provides experienced translator and guide services.",
+  "avtomobilmain": "ATLAS LUXE company provides car rental service"
 }
