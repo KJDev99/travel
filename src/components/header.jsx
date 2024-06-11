@@ -66,7 +66,7 @@ const Header = ({ modal }) => {
                 {banner[`title_${i18n.language}`]}
                 {/* BU Yerda text bo'ladi taxminan 2 qator */}
               </h1>
-              <p className="text-2xl font-Poppins max-md:text-sm  uppercase font-semibold text-white">
+              <p className="text-2xl font-Poppins max-md:text-sm  uppercase font-semibold text-white mt-6">
                 {banner[`text_${i18n.language}`]}
               </p>
             </div>

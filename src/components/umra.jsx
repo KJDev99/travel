@@ -29,8 +29,8 @@ const Umra = ({ modal }) => {
       <h2 className="mt-[58px] mb-4 text-[#14183E] text-[50px] font-bold text-center max-md:text-4xl capitalize">
         {t("umra")}
       </h2>
-      <p className="font-medium mb-4 md:text-lg">{t("umra1")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("umra2")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("umra1")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("umra2")}</p>
       <div className="flex flex-col mt-20">
         {turList.map(
           (tur) =>

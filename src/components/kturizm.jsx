@@ -27,8 +27,8 @@ const Kturizm = ({ modal }) => {
       <h2 className="mt-[58px] mb-4 text-[#14183E] text-[50px] font-bold text-center max-md:text-4xl">
         {t("navbar.menu6")}
       </h2>
-      <p className="font-medium mb-4 md:text-lg">{t("kturizm1")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("kturizm2")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("kturizm1")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("kturizm2")}</p>
       <div className="flex flex-col mt-20">
         {turList.map(
           (tur) =>

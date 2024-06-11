@@ -5,7 +5,7 @@ const Contact = () => {
   const [t] = useTranslation("global");
   return (
     <div className="container mx-auto">
-      <h2 className="text-center text-[#14183E] text-[50px] font-Poppins font-bold mb-8 mt-[60px] max-md:text-3xl max-md:mt-10 max-md:mb-16">
+      <h2 className="text-center text-[#14183E] text-[50px] font-Volkhov font-bold mb-8 mt-[60px] max-md:text-3xl max-md:mt-10 max-md:mb-16">
         Bog’lanish
       </h2>
       <div className="grid grid-cols-2 max-md:grid-cols-1 gap-[40px] max-md:gap-[30px] mb-[100px]">

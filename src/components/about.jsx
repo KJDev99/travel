@@ -18,33 +18,33 @@ const About = () => {
 
   return (
     <div className="container mx-auto">
-      <h2 className="mt-[58px] mb-4 text-[#14183E] text-[50px] font-bold text-center max-md:text-4xl">
+      <h2 className="mt-[58px] mb-4 font-Volkhov text-[#14183E] text-[50px] font-bold text-center max-md:text-4xl">
         {t("navbar.menu1")}
       </h2>
-      <p className="font-medium mb-4 md:text-lg">{t("about1")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("about2")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("about3")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("about4")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("about5")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("about6")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("about7")}</p>
-      <p className="font-medium mb-4 md:text-lg">{t("about8")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("about1")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("about2")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("about3")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("about4")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("about5")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("about6")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("about7")}</p>
+      <p className="font-medium mb-4 md:text-lg text-justify">{t("about8")}</p>
       <h2 className="mb-10 text-[#14183E] text-[32px] font-bold mt-[70px] text-center">
         {t("about9")}
       </h2>
       <div className="flex justify-center max-md:flex-col mb-16 max-md:items-center">
         <img
           className="w-[290px] md:mx-16 cursor-pointer max-md:mb-3"
-          src="./11.webp"
+          src="./guvoh.jpg"
           alt="sertifikat1"
-          onClick={() => openModal("./11.webp")}
+          onClick={() => openModal("./guvoh.jpg")}
         />
-        <img
+        {/* <img
           className="w-[290px] md:mx-16 cursor-pointer "
           src="./22.webp"
           alt="sertifikat2"
           onClick={() => openModal("./22.webp")}
-        />
+        /> */}
       </div>
 
       {isOpen && (

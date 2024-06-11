@@ -61,27 +61,27 @@ export default function BasicTabs() {
           className="flex flex-col justify-center mx-auto w-max bg-tabs-bg mt-[45px] rounded-xl font-medium "
         >
           <Tab
-            className="font-medium text-sm"
+            className="font-medium text-sm "
             label={`${t("viza0")}`}
             {...a11yProps(0)}
           />
           <Tab
-            className="font-medium text-sm"
+            className="font-medium text-sm "
             label={`${t("avia0")}`}
             {...a11yProps(1)}
           />
           <Tab
-            className="font-medium text-sm"
+            className="font-medium text-sm "
             label={`${t("poyezd0")}`}
             {...a11yProps(2)}
           />
           <Tab
-            className="font-medium text-sm"
+            className="font-medium text-sm "
             label={`${t("avtomobil0")}`}
             {...a11yProps(3)}
           />
           <Tab
-            className="font-medium text-sm"
+            className="font-medium text-sm "
             label={`${t("tarjimon0")}`}
             {...a11yProps(4)}
           />
@@ -95,7 +95,7 @@ export default function BasicTabs() {
               src="./pilottt.svg"
               alt=""
             />
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Volkhov max-md:text-[26px]">
               {t("viza0")}
             </h2>
           </div>
@@ -113,7 +113,7 @@ export default function BasicTabs() {
               src="./hizmat2.svg"
               alt=""
             />
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Volkhov max-md:text-[26px]">
               {t("avia0")}
             </h2>
           </div>
@@ -131,7 +131,7 @@ export default function BasicTabs() {
               src="./hizmat3.svg"
               alt=""
             />
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Volkhov max-md:text-[26px]">
               {t("poyezd0")}
             </h2>
           </div>
@@ -150,7 +150,7 @@ export default function BasicTabs() {
               alt=""
             />
 
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Volkhov max-md:text-[26px]">
               {t("avtomobil0")}
             </h2>
           </div>
@@ -175,7 +175,7 @@ export default function BasicTabs() {
               src="./hizmat4.svg"
               alt=""
             />
-            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Poppins max-md:text-[26px]">
+            <h2 className="text-[#14183E] text-[50px] font-bold text-center font-Volkhov max-md:text-[26px]">
               {t("tarjimon0")}
             </h2>
           </div>

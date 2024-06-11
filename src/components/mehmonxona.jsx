@@ -32,7 +32,7 @@ const Mehmonxona = () => {
 
   return (
     <div className="container mx-auto">
-      <h2 className="mt-[75px] max-md:mt-[40px] text-center text-[#14183E] text-[50px] font-bold mb-8 max-md:text-3xl">
+      <h2 className="mt-[75px] max-md:mt-[40px] text-center font-Volkhov text-[#14183E] text-[50px] font-bold mb-8 max-md:text-3xl">
         {t("navbar.menu2")}
       </h2>
       <div className="grid lg:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-[40px] max-md:gap-[60px] mb-[100px] max-md:mb-10 relative">
