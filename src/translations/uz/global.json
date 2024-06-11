@@ -62,5 +62,12 @@
   "aviamain": "ATLAS LUXE kompaniyasi avia bilet bron qilish xizmatlarini taqdim etadi.",
   "poyezdmain": "ATLAS LUXE kompaniyasi sayohatingiz uchun  poyezd bilet xizmatlarini taqdim etadi.",
   "tarjimonmain": "ATLAS LUXE kompaniyasi tajribali tarjimon va gid xizmatlarini taqdim etadi.",
-  "avtomobilmain": "ATLAS LUXE kompaniyasi Ijara avtomobil  xizmatini taqdim etadi"
+  "avtomobilmain": "ATLAS LUXE kompaniyasi Ijara avtomobil  xizmatini taqdim etadi",
+  "msguz0": "Muvaffaqiyatli jo'natildi!",
+  "msguz1": "Xatolik yuz berdi",
+  "modal0": "Bron qilish",
+  "modal1": "FISH",
+  "modal2": "Telefon raqam",
+  "modal3": "Kishi soni",
+  "modal4": "Jo’natish"
 }

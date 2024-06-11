@@ -62,5 +62,12 @@
   "aviamain": "ATLAS LUXE company provides air ticket booking services.",
   "poyezdmain": "ATLAS LUXE provides train ticket services for your trip.",
   "tarjimonmain": "ATLAS LUXE company provides experienced translator and guide services.",
-  "avtomobilmain": "ATLAS LUXE company provides car rental service"
+  "avtomobilmain": "ATLAS LUXE company provides car rental service",
+  "msguz0": "Sent successfully!",
+  "msguz1": "An error occurred.",
+  "modal0": "Make a reservation",
+  "modal1": "FISH",
+  "modal2": "Phone number",
+  "modal3": "Number of people",
+  "modal4": "Sending"
 }
