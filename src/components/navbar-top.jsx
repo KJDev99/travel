@@ -18,10 +18,10 @@ const NavbarTop = () => {
               atlasluxeuz@gmail.com
             </p>
           </a>
-          <a href="tel:+998932550909" className="flex mx-4">
+          <a href="tel:+998337804040" className="flex mx-4">
             <img src="./phone.svg" alt="email" />
             <p className="ml-3 text-[14px] text-[rgba(0,0,0,0.6)]">
-              +998 93 255-09-09
+              +998 33 780-40-40
             </p>
           </a>
         </div>

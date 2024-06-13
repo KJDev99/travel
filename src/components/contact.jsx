@@ -21,10 +21,10 @@ const Contact = () => {
               </p>
               <p className="mb-1 text-black/[.80]">Telefon:</p>
               <a
-                href="tel:+998932550909"
+                href="tel:+998337804040"
                 className="text-[18px] font-medium mb-4"
               >
-                +998 93 255-09-09
+                +998 33 780-40-40
               </a>
               <p className="mb-1 text-black/[.80]">E-mail:</p>
               <a

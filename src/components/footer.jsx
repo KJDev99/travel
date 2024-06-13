@@ -58,10 +58,10 @@ const Footer = () => {
               atlasluxeuz@gmail.com
             </p>
           </a>
-          <a href="tel:+998932550909" className="flex mb-6">
+          <a href="tel:+998337804040" className="flex mb-6">
             <img className="mr-3" src="./phone.svg" alt="email" />
             <p className="text-[14px] text-[rgba(0,0,0,0.6)]">
-              +998 93 255-09-09
+              +998 33 780-40-40
             </p>
           </a>
           <div className="flex">
