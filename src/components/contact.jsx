@@ -42,7 +42,7 @@ const Contact = () => {
         </div>
         <div className="">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4596348891864!2d69.23918880973592!3d41.32061758382117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b756b37ada9%3A0x2f32430f6f59195c!2z0YPQu9C40YbQsCDQpNGD0YDQutCw0YLQsCAy0LAsINCi0LDRiNC60LXQvdGCLCBUb3Noa2VudCBTaGFocmksINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1717348829260!5m2!1sru!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5876848967664!2d69.245212!3d41.317832499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba46fb431fb%3A0xf3c68f98dcf720ba!2sAtlas%20Luxe!5e0!3m2!1sru!2s!4v1719588699700!5m2!1sru!2s"
             width="600"
             height="304"
             loading="lazy"

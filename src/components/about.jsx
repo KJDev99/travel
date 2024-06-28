@@ -39,12 +39,12 @@ const About = () => {
           alt="sertifikat1"
           onClick={() => openModal("./guvoh.jpg")}
         />
-        {/* <img
+        <img
           className="w-[290px] md:mx-16 cursor-pointer "
-          src="./22.webp"
+          src="./certificate.jpg"
           alt="sertifikat2"
-          onClick={() => openModal("./22.webp")}
-        /> */}
+          onClick={() => openModal("./certificate.jpg")}
+        />
       </div>
 
       {isOpen && (
